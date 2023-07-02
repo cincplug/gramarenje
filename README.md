@@ -1,3 +1,10 @@
+This was my first React project, which I made back in 2017, with no state management, with nowadays deprecated lifecycle methods, and all other sorts of ugliness, especially when it comes to these aggressive animations. But apart from that, it's a very minimalistic but ambitious Serbian grammar exercise collection, where the student needs to pick for example all the verbs or all the adverbs, from various fictional and film examples.
+
+The entire codebase is heavily loaded with Serbian names for functions, variables, classes and other entities, sorry for that 🥔🫑🍅🧅🥕🧄
+
+However, I planted the source over the latest CRA and it mostly works
+
+---
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
