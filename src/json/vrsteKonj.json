@@ -1,0 +1,74 @@
+[
+    {
+        "mnozina": "Infinitiv",
+        "tacno": true
+    },
+    {
+        "mnozina": "Prezent",
+        "tacno": true
+    },
+    {
+        "mnozina": "Radni glagolski pridev",
+        "tacno": true
+    },
+    {
+        "mnozina": "Trpni glagolski pridev",
+        "tacno": true
+    },
+    {
+        "mnozina": "Optativ",
+        "tacno": true
+    },
+    {
+        "mnozina": "Aorist",
+        "tacno": true
+    },
+    {
+        "mnozina": "Imperfekt",
+        "tacno": true
+    },
+    {
+        "mnozina": "Imperativ",
+        "tacno": true
+    },
+    {
+        "mnozina": "Nesvršeni glagolski prilog",
+        "tacno": true
+    },
+    {
+        "mnozina": "Svršeni glagolski prilog",
+        "tacno": true
+    },
+    {
+        "mnozina": "Futur prvi",
+        "tacno": true
+    },
+    {
+        "mnozina": "Perfekt",
+        "tacno": true
+    },
+    {
+        "mnozina": "Pluskvamperfekt",
+        "tacno": true
+    },
+    {
+        "mnozina": "Futur prvi",
+        "tacno": true
+    },
+    {
+        "mnozina": "Futur drugi",
+        "tacno": true
+    },
+    {
+        "mnozina": "Potencijal",
+        "tacno": true
+    },
+    {
+        "mnozina": "Pridevski pasiv",
+        "tacno": true
+    },
+    {
+        "mnozina": "Zamenički pasiv",
+        "tacno": true
+    }
+]

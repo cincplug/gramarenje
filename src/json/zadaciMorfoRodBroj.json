@@ -1,0 +1,40 @@
+{
+    "imenica": [
+        "rod: muški",
+        "rod: ženski",
+        "rod: srednji",
+        "broj: jednina",
+        "broj: množina",
+        "poseban oblik broja: dvojina",
+        "poseban oblik broja: singularija tantum",
+        "poseban oblik broja: pluralija tantum"
+    ],
+    "pridev": [
+        "rod: ženski",
+        "rod: srednji",
+        "rod: muški",
+        "broj: množina",
+        "broj: jednina"
+    ],
+    "zamenica": [
+        "rod: srednji",
+        "rod: muški",
+        "rod: ženski",
+        "broj: jednina",
+        "broj: množina"
+    ],
+    "broj": [
+        "rod: muški",
+        "rod: ženski",
+        "rod: srednji",
+        "broj: jednina",
+        "broj: množina"
+    ],
+    "glagol": [
+        "rod: ženski",
+        "rod: srednji",
+        "rod: muški",
+        "broj: množina",
+        "broj: jednina"
+    ]
+}

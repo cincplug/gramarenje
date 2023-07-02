@@ -1,0 +1,44 @@
+[
+
+    {
+        "mnozina": "prevaranti",
+        "tacno": false,
+        "tekst": "Prevarant je žargonski izraz za varalicu, i naravno da nema nikakve veze sa vrstama suglasnika."
+    },
+    {
+        "mnozina": "dijamanti",
+        "tacno": false,
+        "tekst": "Dijamanti su vrsta dragog kamenja, ujedno i vrsta majoneza."
+    },
+    {
+        "mnozina": "bučni",
+        "tacno": false,
+        "tekst": "Govor kao takav može biti bučan, ali ne postoji nijedan suglasnik koji je sam po sebi takav."
+    },
+    {
+        "mnozina": "očni",
+        "tacno": false,
+        "tekst": "Suglasnici nastaju tako što vazdušna struja pri artikulisanju udara u prepreke, a to su usne, jezik, zubi, nepca ili alveole. Deo vazdušne struje može da prolazi i kroz nos, i tako nastaju nosni suglasnici. Bilo bi međutim jako teško uključiti oči u ovaj proces na bilo koji način."
+    },
+    {
+        "mnozina": "ušni",
+        "tacno": false,
+        "tekst": "Svi suglasnici su na neki način ušni, utoliko što se govor percipira sluhom, dakle ušima."
+    },
+    {
+        "mnozina": "nazidni",
+        "tacno": false,
+        "tekst": "Postoje nazidne utičnice, koje se za zid pričvršćuju pomoću šrafova i tiplova, za razliku od uzidnih koje se ugrađuju u plastičnu doznu, za koju treba u zidu uštemovati otvor. Nazidni suglasnici međutim ne postoje, kao uostalom ni uzidni."
+    },
+    {
+        "mnozina": "prvovenčani",
+        "tacno": false,
+        "tekst": "Stefan Prvovenčani je bio prvi krunisani kralj u dinastiji Nemanjića. Suglasnici ne mogu da budu prvovenčani, ali mogu da budu prednjonepčani ili zadnjonepčani."
+    },
+    {
+        "mnozina": "liferanti",
+        "tacno": false,
+        "tekst": "Liferanti su dobavljači, ljudi koji dobavljaju ili dovoze neku robu. Među suglasnicima ne postoje liferanti, ali postoje sonanti, vibranti, aproksimanti..."
+    }
+
+]

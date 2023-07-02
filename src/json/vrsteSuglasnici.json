@@ -1,0 +1,89 @@
+[
+
+    {
+        "mnozina": "sonanti",
+        "tacno": true,
+        "tekst": "Sonanti ili glasnici (v, j, l, lj, m, n, nj, r) su suglasnici pri čijem artikulisanju vazdušna struja iz govornikovih usta prolazi pored prepreka. Uvek su zvučni i nemaju bezvučne parove, za razliku od konsonanata, pravih suglasnika. U nekim gramatikama, uključujući Normativnu gramatiku srpskog jezika, na kojoj se ova aplikacija zasniva, sonanti su navedeni kao treća, zasebna vrsta glasova.# Mi ih ovde i dalje računamo kao podvrstu suglasnika, jer su suglasnicima fonološki bliži nego samoglasnicima, i sa njima dele kategorije kao što je mesto izgovora (na primer, i suglasnici i sonanti mogu biti prednjonepčani)."
+    },
+    {
+        "mnozina": "konsonanti",
+        "tacno": true,
+        "tekst": "Konsonanti ili pravi suglasnici (b, p, d, t, đ, ć, dž, č, ž, š, z, s, g, k) su najbrojnija i najraznovrsnija grupa glasova. Dele se na zvučno - bezvučne parove, u kojima se parnjaci razlikuju po zvučnosti, dok su im mesto i način tvorbe isti."
+    },
+    {
+        "mnozina": "zvučni",
+        "tacno": true,
+        "tekst": "Zvučni suglasnici su konsonanti b, d, đ, dž, ž, z, g, kao i svi sonanti (v, j, l, lj, m, n, nj, r). Pri artikulaciji zvučnih suglasnika glasne žice vibriraju, dok kod bezvučnih suglasnika miruju. Zvučni konsonanti imaju i svoje bezvučne parnjake (b - p, d - t, đ - ć, dž - č, ž - š, z - s, g - k)."
+    },
+    {
+        "mnozina": "bezvučni",
+        "tacno": true,
+        "tekst": "Bezvučni suglasnici su konsonanti: p, t, ć, č, š, s, k. Pri artikulaciji bezvučnih suglasnika glasne žice miruju, dok kod zvučnih suglasnika vibriraju. Bezvučni konsonanti imaju svoje zvučne parnjake (p - b, t - d, ć - đ, dč - ž, š - ž, s - z, k - g)."
+    },
+    {
+        "mnozina": "dvousneni",
+        "tacno": true,
+        "tekst": "Dvousneni ili bilabijalni suglasnici (b, p, m) su suglasnici pri čijem izgovoru vazdušna struja udara u spoj gornje i donje usne, dok jezik u njihovoj artikulaciji ne učestvuje."
+    },
+    {
+        "mnozina": "usneno-zubni",
+        "tacno": true,
+        "tekst": "Usneno-zubni ili labio-dentalni suglasnici (v, f) se artikulišu kroz prepreku koju stvaraju gornji zubi i donja usna. Kao i kod dvousnenih suglasnika, jezik u stvaranju ove prepreke ne učestvuje."
+    },
+    {
+        "mnozina": "zubni",
+        "tacno": true,
+        "tekst": "Zubni ili dentalni suglasnici (d, t, z, s, c) se artikulišu kroz prepreku koju stvaraju jezik i gornji zubi."
+    },
+    {
+        "mnozina": "nadzubni",
+        "tacno": true,
+        "tekst": "Nadzubni ili alveolarni suglasnici (l, n, r) se artikulišu kroz prepreku koju stvaraju jezik i alveole iza gornjih zuba."
+    },
+    {
+        "mnozina": "prednjonepčani",
+        "tacno": true,
+        "tekst": "Prednjonepčani ili palatalni suglasnici (j, lj, nj, đ, ć, dž, č, ž, š) se artikulišu kroz prepreku koju stvaraju jezik i prednje nepce."
+    },
+    {
+        "mnozina": "zadnjonepčani",
+        "tacno": true,
+        "tekst": "Zadnjonepčani ili velarni suglasnici (k, g, h) se artikulišu kroz prepreku koju stvaraju jezik i zadnje nepce."
+    },
+    {
+        "mnozina": "pregradni",
+        "tacno": true,
+        "tekst": "pregradni, plozivni, praskavi ili eksplozivni suglasnici (b, p, d, t, g, k) su oni kod kojih vazdušna struja nailazi na potpunu prepreku (usne, zubi, jezik ili nepca), naglo je savlađuje i na taj način stvara zvuk."
+    },
+    {
+        "mnozina": "strujni",
+        "tacno": true,
+        "tekst": "Strujni ili frikativni suglasnici (f, h, s, š, z, ž) su oni kod kojih, nasuprot pregradnim suglasnicima, vazdušna struja prolazi kroz uzak kanal koju stvaraju usne, jezik, zubi ili nepca. Zato je ovakve suglasnike moguće izgovariti i produženo, šuštavo."
+    },
+    {
+        "mnozina": "sliveni",
+        "tacno": true,
+        "tekst": "Sliveni suglasnici ili afrikate (c, č, ć, dž, đ) su nastali međusobnim slivanjem odnosno spajanjem suglasnika koji imaju istu zvučnost i mesto tvorbe a razlikuju se po tome što je prvi pregradni a drugi strujni. #c = t + s#č = t + š#ć = t + „meko š”#dž = d + ž#đ = d + „meko ž”"
+    },
+    {
+        "mnozina": "nosni",
+        "tacno": true,
+        "tekst": "Nosni ili nazalni suglasnici (m, n, nj) se artikulišu tako što deo vazdušne struje prolazi kroz nos."
+    },
+    {
+        "mnozina": "laterali",
+        "tacno": true,
+        "tekst": "Laterali ili bočni suglasnici (l, lj) nastaju tako što vazdušna struja prolazi duž bočnih strana jezika, dok vrh jezika stvara prepreku preko koje se ovi glasovi artikulišu."
+    },
+    {
+        "mnozina": "vibranti",
+        "tacno": true,
+        "tekst": "Vibranti (u našem jeziku je takvo jedino „r”) su suglasnici koji nastaju usled vibracija između artikulatora i mesta tvorbe, u slučaju „r” to su vrh jezika i alveole."
+    },
+    {
+        "mnozina": "aproksimanti",
+        "tacno": true,
+        "tekst": "Aproksimanti ili poluvokali (v, j) su suglasnici pri čijoj se artikulaciji glasovni trakt sužava, ali vazduh i dalje struji bez čujne turbulencije. Otvoreniji su od strujnih suglasnika a zatvoreniji od samoglasnika."
+    }
+
+]

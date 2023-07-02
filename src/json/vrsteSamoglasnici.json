@@ -1,0 +1,28 @@
+[
+
+    {
+        "mnozina": "prednji",
+        "tacno": true,
+        "tekst": "Prednji samoglasnici ili samoglasnici prednjeg reda (e, i) se tako zovu jer je jezik pri njihovoj artikulaciji isturen napred."
+    },
+    {
+        "mnozina": "srednji",
+        "tacno": true,
+        "tekst": "Samoglasnik srednjeg reda je „a”, pri čijoj artikulaciji jezik stoji u srednjem vodoravnom položaju, za razliku od prednjih (e, i) i zadnjih (o, u). Vodi računa da se samoglasnici dele i po uspravnom položaju jezika, i u toj podeli su srednji samoglasnici „e” i „o”, koji su po uspravnom položaju između visokih „i” i „u” i niskog „a”."
+    },
+    {
+        "mnozina": "zadnji",
+        "tacno": true,
+        "tekst": "Samoglasnici zadnjeg reda (o, u) se tako zovu jer jezik pri njihovoj artikulaciji stoji u zadnjem položaju, bliže zadnjem nepcu nego zubima."
+    },
+    {
+        "mnozina": "visoki",
+        "tacno": true,
+        "tekst": "Visoki samoglasnici (e, i) se tako zovu jer je jezik pri njihovoj artikulaciji izdignut. U slučaju glasa „i” on je skoro u dodiru sa prednjim nepcem (zbog čega „i” ima sličnosti sa prednjonepčanim suglasnikom „j”)."
+    },
+    {
+        "mnozina": "niski",
+        "tacno": true,
+        "tekst": "Niski samoglasnik „a” se tako zove jer je jezik pri njegovoj artikulaciji maksimalno spušten. Upravo zato će ti doktorka na pregledu uvek reći da kažeš „a”, a nikad „e” ili „u” :)"
+    }
+]

@@ -1,0 +1,72 @@
+{
+    "imenica": [
+        "rod: muški ženski srednji",
+        "broj: jednina množina",
+        "poseban oblik broja: singularija_tantum pluralija_tantum dvojina",
+        "deklinacija: prva druga treća",
+        "osnova: proširena",
+        "padež: nominativ genitiv dativ akuzativ vokativ instrumental lokativ",
+        "promena: adjektivna nepromenljiva",
+        "vrsta imenice: vlastita zajednička",
+        "podgrupa: zbirna gradivna apstraktna brojna glagolska"
+    ],
+    "pridev": [
+        "vrsta prideva: opisni odnosni",
+        "odnosni: pravi_odnosni prisvojni odnosno-prisvojni",
+        "vid: neodređeni određeni",
+        "stepen poređenja: pozitiv komparativ superlativ",
+        "rod: muški ženski srednji",
+        "broj: jednina množina",
+        "padež: nominativ genitiv dativ akuzativ vokativ instrumental lokativ"
+    ],
+    "zamenica": [
+        "vrsta zamenice: imenička pridevska",
+        "značenje zamenice: lična povratna prisvojna pokazna upitna odnosna neodređena odrična opšta",
+        "funkcija zamenice: za_bića_i_predmete za_veličinu za_osobinu za_pripadnost",
+        "rod: muški ženski srednji",
+        "broj: jednina množina",
+        "padež: nominativ genitiv dativ akuzativ vokativ instrumental lokativ",
+        "lice: prvo drugo treće",
+        "povratna: opštepovratna povratno-prisvojna socijativno-povratna"
+    ],
+    "broj": [
+        "vrsta broja: osnovni redni zbirni opšti",
+        "rod: muški ženski srednji",
+        "broj: jednina množina",
+        "padež: nominativ genitiv dativ akuzativ vokativ instrumental lokativ"
+    ],
+    "glagol": [
+        "glagolska vrsta: Ⅰ Ⅱ Ⅲ Ⅳ Ⅴ Ⅵ Ⅶ",
+        "glagolski oblik: infinitiv prezent radni_glagolski_pridev trpni_glagolski_pridev optativ aorist imperfekt imperativ glagolski_prilog_sadašnji glagolski_prilog_prošli futur_prvi",
+        "gradi: perfekt pluskvamperfekt futur_prvi futur_drugi potencijal pridevski_pasiv zamenički_pasiv",
+        "poseban glagolski oblik: krnji_perfekt",
+        "funkcija: glavni pomoćni modalni",
+        "glagolski vid: nesvršeni svršeni",
+        "akcionalnost: trajni iterativni početni završni trenutni",
+        "prelaznost: prelazni neprelazni",
+        "povratni: pravi_povratni medijalni uzajamno-povratni apsolutni_povratni",
+        "lice: prvo drugo treće",
+        "rod: muški ženski srednji",
+        "broj: jednina množina"
+    ],
+    "prilog": [
+        "stepen poređenja: pozitiv komparativ superlativ",
+        "značenje priloga: odredbeni okolnosni",
+        "odredbeni: načinski količinski",
+        "okolnosni: mesni vremenski uzročni ciljni"
+    ],
+    "predlog": [
+        "vrsta predloga: pravi nepravi",
+        "značenje predloga: mesto vreme uzrok način društvo cilj poređenje praćenje poreklo"
+    ],
+    "veznik": [
+        "sadržaj sintaksičke veze: naporedni zavisni",
+        "vrsta veznika: sastavni suprotni rastavni izrični uzročni posledični ciljni uslovni vremenski mesni dopusni"
+    ],
+    "rečca": [
+        "vrsta rečce: upitna potvrdna odrična zaključna isključna sastavna pokazna poredbena imperativna afektivna modalna"
+    ],
+    "uzvik": [
+        "vrsta uzvika: ekspresivni imperativni onomatopeični"
+    ]
+}

@@ -1,0 +1,24 @@
+[
+
+    {
+        "mnozina": "suvlasnici",
+        "tacno": false,
+        "tekst": "Suvlasnici su ljudi koji dele vlasništvo nad nečime, recimo kućom, automobilom, čamcem ili jahtom."
+    },
+    {
+        "mnozina": "vatrogasnici",
+        "tacno": false,
+        "tekst": "Kao prvo, ne kaže se vatrogasnici nego vatrogasci, i to nisu glasovi nego ljudi koji gase požare velikim šmrkovima, i često ih crtaju s velikim brkovima."
+    },
+    {
+        "mnozina": "slanici",
+        "tacno": false,
+        "tekst": "Slanici su posude za so. Neki od njih imaju rupičasti poklopac kroz koji se so sipa na hranu, a drugi se sastoje od zasebnih odeljaka za so i biber, između kojih obično stoji posebno važan odeljak za čačkalice."
+    },
+    {
+        "mnozina": "protonamesnici",
+        "tacno": false,
+        "tekst": "Protonamesnici su zamenici protojereja u pravoslavnoj crkvi."
+    }
+
+]

@@ -1,0 +1,31 @@
+[
+
+    {
+        "mnozina": "nominativ",
+        "tacno": true
+    },
+    {
+        "mnozina": "genitiv",
+        "tacno": true
+    },
+    {
+        "mnozina": "dativ",
+        "tacno": true
+    },
+    {
+        "mnozina": "akuzativ",
+        "tacno": true
+    },
+    {
+        "mnozina": "vokativ",
+        "tacno": true
+    },
+    {
+        "mnozina": "instrumental",
+        "tacno": true
+    },
+    {
+        "mnozina": "lokativ",
+        "tacno": true
+    }
+]

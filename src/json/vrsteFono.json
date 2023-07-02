@@ -1,0 +1,20 @@
+[
+
+    {
+        "jednina": "samoglasnik",
+        "mnozina": "samoglasnici",
+        "mnozinaGenitiv": "samoglasnika",
+        "mnozinaAkuzativ": "samoglasnike",
+        "tacno": true,
+        "tekst": "Samoglasnici ili vokali (a, e, i, o, u) su glasovi pri čijem artikulisanju vazdušna struja iz usta izlazi bez prepreka. Svi samoglasnici su zvučni."
+    },
+    {
+        "jednina": "suglasnik",
+        "mnozina": "suglasnici",
+        "mnozinaGenitiv": "suglasnika",
+        "mnozinaAkuzativ": "suglasnike",
+        "tacno": true,
+        "tekst": "Suglasnici su glasovi pri čijem artikulisanju vazdušna struja udara u prepreke (usne, jezik, zubi, nepca)."
+    }
+
+]

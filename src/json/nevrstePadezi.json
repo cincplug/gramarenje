@@ -1,0 +1,32 @@
+[
+    {
+        "mnozina": "deminutiv",
+        "tacno": false,
+        "tekst": "Deminutiv nije padež, već oblik imenice sa umanjenim značenjem (sunašce, krompirić...)"
+    },
+    {
+        "mnozina": "šljokativ",
+        "tacno": false,
+        "tekst": "Neki mešaju lokativ, koji jeste padež, i šljokativ, koji nije ništa, verovatno zbog analogije sa glagolima „lokati” i „šljokati”."
+    },
+    {
+        "mnozina": "paracetamol",
+        "tacno": false,
+        "tekst": "Paracetamol je lek protiv glavobolje."
+    },
+    {
+        "mnozina": "abraziv",
+        "tacno": false,
+        "tekst": "Abraziv je materijal koji se koristi za glačanje neke drvene, kamene ili druge površine. Tipičan abraziv je brusni papir, poznatiji kao šmirgla."
+    },
+    {
+        "mnozina": "infinitiv",
+        "tacno": false,
+        "tekst": "Infinitiv je glagolski oblik, dakle spada u oblast konjugacije a ne deklinacije."
+    },
+    {
+        "mnozina": "pterodaktil",
+        "tacno": false,
+        "tekst": "Pterodaktili ili pterosauri su bili prvi leteći gmizavci iz doba Jure."
+    }
+]

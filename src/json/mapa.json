@@ -1,0 +1,576 @@
+{
+
+    "vodoravni položaj:prednjeg vodoravnog položaja": {
+        "ps": "prednjeg vodoravnog položaja"
+    },
+    "vodoravni položaj:srednjeg vodoravnog položaja": {
+        "ps": "srednjeg vodoravnog položaja"
+    },
+    "vodoravni položaj:zadnjeg vodoravnog položaja": {
+        "ps": "zadnjeg vodoravnog položaja"
+    },
+    "uspravni položaj:visokog uspravnog položaja": {
+        "ps": "visokog uspravnog položaja"
+    },
+    "uspravni položaj:srednjeg uspravnog položaja": {
+        "ps": "srednjeg uspravnog položaja"
+    },
+    "uspravni položaj:niskog uspravnog položaja": {
+        "ps": "niskog uspravnog položaja"
+    },
+    "grupa:sonant": {
+        "ap": "sonante",
+        "ali": "sonant"
+    },
+    "grupa:konsonant": {
+        "ap": "konsonante",
+        "ali": "konsonant"
+    },
+    "zvučnost:zvučni": {
+        "pr": "zvučne"
+    },
+    "zvučnost:bezvučni": {
+        "pr": "bezvučne"
+    },
+    "mesto tvorbe:dvousneni": {
+        "pr": "dvousnene"
+    },
+    "mesto tvorbe:usneno-zubni": {
+        "pr": "usneno-zubne"
+    },
+    "mesto tvorbe:zubni": {
+        "pr": "zubne"
+    },
+    "mesto tvorbe:nadzubni": {
+        "pr": "nadzubne"
+    },
+    "mesto tvorbe:prednjonepčani": {
+        "pr": "prednjonepčane"
+    },
+    "mesto tvorbe:zadnjonepčani": {
+        "pr": "zadnjonepčane"
+    },
+    "način tvorbe:pregradni": {
+        "pr": "pregradne"
+    },
+    "način tvorbe:strujni": {
+        "pr": "strujne"
+    },
+    "način tvorbe:sliveni": {
+        "pr": "slivene"
+    },
+    "način tvorbe:nosni": {
+        "pr": "nosne"
+    },
+    "način tvorbe:lateral": {
+        "ap": "laterale",
+        "ali": "lateral"
+    },
+    "način tvorbe:vibrant": {
+        "ap": "vibrante",
+        "ali": "vibrant"
+    },
+    "način tvorbe:aproksimant": {
+        "ap": "aproksimante",
+        "ali": "aproksimant"
+    },
+
+
+
+
+    "rod:muški": {
+        "ps": "muškog roda"
+    },
+    "rod:ženski": {
+        "ps": "ženskog roda"
+    },
+    "rod:srednji": {
+        "ps": "srednjeg roda"
+    },
+    "broj:jednina": {
+        "ps": "u jednini"
+    },
+    "broj:množina": {
+        "ps": "u množini"
+    },
+    "poseban oblik broja:dvojina": {
+        "ap": "u dvojini (dualu)",
+        "ali": "ovde nije u obliku dvojine"
+    },
+    "poseban oblik broja:singularija tantum": {
+        "ap": "u singulariji tantum",
+        "ali": "ne spada u singulariju tantum"
+    },
+    "poseban oblik broja:pluralija tantum": {
+        "ap": "u pluraliji tantum",
+        "ali": "ne spada u pluraliju tantum"
+    },
+    "deklinacija:prva": {
+        "ps": "iz prve deklinacione vrste"
+    },
+    "deklinacija:druga": {
+        "ps": "iz druge deklinacione vrste"
+    },
+    "deklinacija:treća": {
+        "ps": "iz treće deklinacione vrste"
+    },
+    "osnova:proširena": {
+        "ps": "sa proširenom osnovom"
+    },
+    "padež:nominativ": {
+        "ps": "u nominativu"
+    },
+    "padež:genitiv": {
+        "ps": "u genitivu"
+    },
+    "padež:dativ": {
+        "ps": "u dativu"
+    },
+    "padež:akuzativ": {
+        "ps": "u akuzativu"
+    },
+    "padež:vokativ": {
+        "ps": "u vokativu"
+    },
+    "padež:instrumental": {
+        "ps": "u instrumentalu"
+    },
+    "padež:lokativ": {
+        "ps": "u lokativu"
+    },
+    "vrsta imenice:vlastita": {
+        "pr": "vlastite"
+    },
+    "vrsta imenice:zajednička": {
+        "pr": "zajedničke"
+    },
+    "promena:nepromenljiva": {
+        "pr": "nepromenljive",
+        "ali": "je promenljiva kao i većina ostalih imenica"
+    },
+    "promena:adjektivna": {
+        "ps": "sa adjektivnim tipom promene",
+        "ali": "promena joj je standardna (supstantivna)"
+    },
+    "podgrupa:zbirna": {
+        "pr": "zbirne"
+    },
+    "podgrupa:gradivna": {
+        "pr": "gradivne"
+    },
+    "podgrupa:apstraktna": {
+        "pr": "apstraktne"
+    },
+    "podgrupa:brojna": {
+        "pr": "brojne"
+    },
+    "podgrupa:glagolska": {
+        "pr": "glagolske"
+    },
+    "vrsta zamenice:imenička": {
+        "pr": "imeničke"
+    },
+    "vrsta zamenice:pridevska": {
+        "pr": "pridevske"
+    },
+    "značenje zamenice:lična": {
+        "pr": "lične"
+    },
+    "značenje zamenice:prisvojna": {
+        "pr": "prisvojne"
+    },
+    "značenje zamenice:pokazna": {
+        "pr": "pokazne"
+    },
+    "značenje zamenice:upitna": {
+        "pr": "upitne"
+    },
+    "značenje zamenice:odnosna": {
+        "pr": "odnosne"
+    },
+    "značenje zamenice:neodređena": {
+        "pr": "neodređene"
+    },
+    "značenje zamenice:odrična": {
+        "pr": "odrične"
+    },
+    "značenje zamenice:opšta": {
+        "pr": "opšte"
+    },
+    "funkcija zamenice:za bića i predmete": {
+        "ps": "za bića i predmete"
+    },
+    "funkcija zamenice:za veličinu": {
+        "ps": "za veličinu"
+    },
+    "funkcija zamenice:za osobinu": {
+        "ps": "za osobinu"
+    },
+    "funkcija zamenice:za pripadnost": {
+        "ps": "za pripadnost"
+    },
+    "lice:prvo": {
+        "ps": "u prvom licu"
+    },
+    "lice:drugo": {
+        "ps": "u drugom licu"
+    },
+    "lice:treće": {
+        "ps": "u trećem licu"
+    },
+    "povratna": {
+        "z": "povratne zamenice"
+    },
+    "povratna:opštepovratna": {
+        "pr": "opštepovratne"
+    },
+    "povratna:povratno-prisvojna": {
+        "pr": "povratno-prisvojne"
+    },
+    "povratna:socijativno-povratna": {
+        "pr": "socijativno-povratne"
+    },
+    "vrsta prideva:opisni": {
+        "pr": "opisne"
+    },
+    "vrsta prideva:odnosni": {
+        "pr": "odnosne"
+    },
+    "odnosni": {
+        "z": "odnosni pridevi"
+    },
+    "odnosni:prisvojni": {
+        "pr": "prisvojne"
+    },
+    "odnosni:odnosno-prisvojni": {
+        "pr": "odnosno-prisvojne"
+    },
+    "vid": {
+        "z": "pridevski vid"
+    },
+    "vid:neodređeni": {
+        "ps": "neodređenog vida"
+    },
+    "vid:određeni": {
+        "ps": "određenog vida"
+    },
+    "stepen poređenja:pozitiv": {
+        "ps": "u pozitivu"
+    },
+    "stepen poređenja:komparativ": {
+        "ps": "u komparativu"
+    },
+    "stepen poređenja:superlativ": {
+        "ps": "u superlativu"
+    },
+    "glagolska vrsta:Ⅰ": {
+        "ps": "Ⅰ vrste"
+    },
+    "glagolska vrsta:Ⅱ": {
+        "ps": "Ⅱ vrste"
+    },
+    "glagolska vrsta:Ⅲ": {
+        "ps": "Ⅲ vrste"
+    },
+    "glagolska vrsta:Ⅳ": {
+        "ps": "Ⅳ vrste"
+    },
+    "glagolska vrsta:Ⅴ": {
+        "ps": "Ⅴ vrste"
+    },
+    "glagolska vrsta:Ⅵ": {
+        "ps": "Ⅵ vrste"
+    },
+    "glagolska vrsta:Ⅶ": {
+        "ps": "Ⅶ vrste"
+    },
+    "glagolski oblik": {
+        "z": "prosti glagolski oblici"
+    },
+    "glagolski oblik:infinitiv": {
+        "ps": "u infinitivu"
+    },
+    "glagolski oblik:prezent": {
+        "ps": "u prezentu"
+    },
+    "glagolski oblik:radni glagolski pridev": {
+        "ps": "u obliku radnog glagolskog prideva"
+    },
+    "glagolski oblik:trpni glagolski pridev": {
+        "ps": "u obliku trpnog glagolskog prideva"
+    },
+    "glagolski oblik:optativ": {
+        "ps": "u optativu"
+    },
+    "glagolski oblik:aorist": {
+        "ps": "u aoristu"
+    },
+    "glagolski oblik:imperfekt": {
+        "ps": "u imperfektu"
+    },
+    "glagolski oblik:imperativ": {
+        "ps": "u imperativu"
+    },
+    "glagolski oblik:nesvršeni glagolski prilog": {
+        "ps": "u obliku nesvršenog glagolskog priloga"
+    },
+    "glagolski oblik:svršeni glagolski prilog": {
+        "ps": "u obliku svršenog glagolskog priloga"
+    },
+    "glagolski oblik:futur prvi": {
+        "ps": "u spojenom obliku futura prvog"
+    },
+    "poseban glagolski oblik:krnji perfekt": {
+        "ps": "u obliku krnjeg perfekta"
+    },
+    "gradi": {
+        "z": "složeni glagolski oblici"
+    },
+    "gradi:perfekt": {
+        "ps": "u sastavu perfekta"
+    },
+    "gradi:pluskvamperfekt": {
+        "ps": "u sastavu pluskvamperfekta"
+    },
+    "gradi:futur prvi": {
+        "ps": "u sastavu složenog oblika futura prvog"
+    },
+    "gradi:futur drugi": {
+        "ps": "u sastavu futura drugog"
+    },
+    "gradi:potencijal": {
+        "ps": "u sastavu potencijala"
+    },
+    "gradi:pridevski pasiv": {
+        "ps": "u sastavu pridevskog pasiva"
+    },
+    "gradi:zamenički pasiv": {
+        "ps": "u sastavu zameničkog pasiva"
+    },
+    "funkcija:glavni": {
+        "pr": "glavne"
+    },
+    "funkcija:pomoćni": {
+        "pr": "pomoćne"
+    },
+    "funkcija:modalni": {
+        "pr": "modalne"
+    },
+    "glagolski vid:nesvršeni": {
+        "ps": "nesvršenog vida"
+    },
+    "glagolski vid:svršeni": {
+        "ps": "svršenog vida"
+    },
+    "akcionalnost:trajni": {
+        "pr": "trajne"
+    },
+    "akcionalnost:iterativni": {
+        "pr": "iterativne"
+    },
+    "akcionalnost:početni": {
+        "pr": "početne"
+    },
+    "akcionalnost:završni": {
+        "pr": "završne"
+    },
+    "akcionalnost:trenutni": {
+        "pr": "trenutne"
+    },
+    "prelaznost:prelazni": {
+        "pr": "prelazne"
+    },
+    "prelaznost:neprelazni": {
+        "pr": "neprelazne"
+    },
+    "povratni": {
+        "z": "povratni glagoli"
+    },
+    "povratni:pravi povratni": {
+        "pr": "prave povratne"
+    },
+    "povratni:medijalni": {
+        "pr": "medijalne"
+    },
+    "povratni:uzajamno-povratni": {
+        "pr": "uzajamno-povratne"
+    },
+    "povratni:apsolutni povratni": {
+        "pr": "apsolutne povratne"
+    },
+    "poreklo:pravi": {
+        "ps": "pravi"
+    },
+    "poreklo:nepravi": {
+        "ps": "nepravi"
+    },
+    "odredbeni": {
+        "z": "odredbeni prilozi"
+    },
+    "okolnosni": {
+        "z": "okolnosni prilozi"
+    },
+    "značenje priloga:odredbeni": {
+        "pr": "odredbene"
+    },
+    "značenje priloga:okolnosni": {
+        "pr": "okolnosne"
+    },
+    "odredbeni:načinski": {
+        "pr": "načinske"
+    },
+    "odredbeni:količinski": {
+        "pr": "količinske"
+    },
+    "okolnosni:mesni": {
+        "pr": "mesne"
+    },
+    "okolnosni:vremenski": {
+        "pr": "vremenske"
+    },
+    "okolnosni:uzročni": {
+        "pr": "uzročne"
+    },
+    "okolnosni:ciljni": {
+        "pr": "ciljne"
+    },
+    "vrsta broja:osnovni": {
+        "pr": "osnovne"
+    },
+    "vrsta broja:redni": {
+        "pr": "redne"
+    },
+    "vrsta broja:zbirni": {
+        "pr": "zbirne"
+    },
+    "vrsta broja:opšti": {
+        "pr": "opšte"
+    },
+    "vrsta predloga:pravi": {
+        "pr": "prave"
+    },
+    "vrsta predloga:nepravi": {
+        "pr": "neprave"
+    },
+    "značenje predloga:mesto": {
+        "ap": "sa mesnim značenjem",
+        "ali": "ovde ima mesno značenje"
+    },
+    "značenje predloga:vreme": {
+        "ap": "sa vremenskim značenjem",
+        "ali": "ovde ima vremensko značenje"
+    },
+    "značenje predloga:uzrok": {
+        "ap": "sa uzročnim značenjem",
+        "ali": "ovde ima uzročno značenje"
+    },
+    "značenje predloga:način": {
+        "ap": "sa načinskim značenjem",
+        "ali": "ovde ima načinsko značenje"
+    },
+    "značenje predloga:društvo": {
+        "ap": "sa značenjem društva (zajednice)",
+        "ali": "ovde ima značenje društva (zajednice)"
+    },
+    "značenje predloga:cilj": {
+        "ap": "sa značenjem cilja ili pravca",
+        "ali": "ovde ima značenje cilja ili pravca"
+    },
+    "značenje predloga:poređenje": {
+        "ap": "sa poredbenim značenjem",
+        "ali": "ovde ima poredbeno značenje"
+    },
+    "značenje predloga:praćenje": {
+        "ap": "sa značenjem praćenja",
+        "ali": "ovde ima značenje praćenja"
+    },
+    "značenje predloga:poreklo": {
+        "ap": "sa značenjem porekla",
+        "ali": "ovde ima značenje porekla"
+    },
+    "značenje predloga:dopusno": {
+        "ap": "sa dopusnim značenjem",
+        "ali": "ovde ima dopusno značenje"
+    },
+    "vrsta rečce:upitna": {
+        "pr": "upitne"
+    },
+    "vrsta rečce:potvrdna": {
+        "pr": "potvrdne"
+    },
+    "vrsta rečce:odrična": {
+        "pr": "odrične"
+    },
+    "vrsta rečce:zaključna": {
+        "pr": "zaključne"
+    },
+    "vrsta rečce:isključna": {
+        "pr": "isključne"
+    },
+    "vrsta rečce:sastavna": {
+        "pr": "sastavne"
+    },
+    "vrsta rečce:pokazna": {
+        "pr": "pokazne"
+    },
+    "vrsta rečce:poredbena": {
+        "pr": "poredbene"
+    },
+    "vrsta rečce:imperativna": {
+        "pr": "imperativne"
+    },
+    "vrsta rečce:afektivna": {
+        "pr": "afektivne"
+    },
+    "vrsta rečce:modalna": {
+        "pr": "modalne"
+    },
+    "sadržaj sintaksičke veze:naporedni": {
+        "pr": "naporedne"
+    },
+    "sadržaj sintaksičke veze:zavisni": {
+        "pr": "zavisne"
+    },
+    "vrsta veznika:sastavni": {
+        "pr": "sastavne"
+    },
+    "vrsta veznika:suprotni": {
+        "pr": "suprotne"
+    },
+    "vrsta veznika:rastavni": {
+        "pr": "rastavne"
+    },
+    "vrsta veznika:uzročni": {
+        "pr": "uzročne"
+    },
+    "vrsta veznika:izrični": {
+        "pr": "izrične"
+    },
+    "vrsta veznika:posledični": {
+        "pr": "posledične"
+    },
+    "vrsta veznika:ciljni": {
+        "pr": "ciljne"
+    },
+    "vrsta veznika:uslovni": {
+        "pr": "uslovne"
+    },
+    "vrsta veznika:vremenski": {
+        "pr": "vremenske"
+    },
+    "vrsta veznika:mesni": {
+        "pr": "mesne"
+    },
+    "vrsta veznika:dopusni": {
+        "pr": "dopusne"
+    },
+    "vrsta uzvika:ekspresivni": {
+        "pr": "ekspresivne"
+    },
+    "vrsta uzvika:imperativni": {
+        "pr": "imperativne"
+    },
+    "vrsta uzvika:onomatopeični": {
+        "pr": "onomatopeične"
+    }
+}

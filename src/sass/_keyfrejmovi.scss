@@ -1,0 +1,202 @@
+@keyframes precrtaj {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes pretapanje {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes uskakanje {
+    0% {
+        transform: scale(0.98);
+    }
+    64% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes svrati {
+    0% {
+        height: 100%;
+    }
+    2% {
+        height: 104%;
+    }
+    84% {
+        height: 110%;
+    }
+    100% {
+        height: 0;
+    }
+}
+
+@keyframes aktivnaVrsta {
+    0% {
+        transform: rotateZ(-1deg) translateY(5px);
+    }
+    100% {
+        transform: rotateZ(0deg) translateY(0);
+    }
+}
+@keyframes leziLevo {
+    0% {
+        transform: rotateZ(-0.5deg) translateY(5px);
+    }
+    100% {
+        transform: rotateZ(0deg) translateY(0);
+    }
+}
+@keyframes idi {
+    0% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: transparent;
+        transform: rotateZ(100deg);
+        opacity: 0;
+    }
+}
+
+@keyframes leziDesno {
+    0% {
+        transform: rotateZ(0.5deg) translateY(5px);
+    }
+    100% {
+        transform: rotateZ(0deg) translateY(0);
+    }
+}
+
+@keyframes rasiri {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes zadrhti {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    10% {
+        transform: rotateZ(2deg);
+    }
+    20% {
+        transform: rotateZ(-2deg);
+    }
+    56% {
+        transform: rotateZ(1deg);
+    }
+    74% {
+        transform: rotateZ(-1deg);
+    }
+    94% {
+        transform: rotateZ(0.3deg);
+    }
+    98% {
+        transform: rotateZ(0.3deg);
+    }
+}
+
+@keyframes uvod {
+    0% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(0);
+    }
+    42% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1) rotateZ(0deg);
+    }
+    60% {
+        transform: rotateZ(-2deg);
+    }
+    74% {
+        transform: rotateZ(1deg);
+    }
+    88% {
+        transform: rotateZ(-1deg);
+    }
+    94% {
+        transform: rotateZ(0.3deg);
+    }
+    98% {
+        transform: rotateZ(0.3deg);
+    }
+}
+
+@keyframes zavrti {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(240deg);
+    }
+    90% {
+        transform: rotateZ(-10deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes obrniDesno {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    15% {
+        transform: rotateZ(-280deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes obrniLevo {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    15% {
+        transform: rotateZ(280deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes noviNivo {
+    0% {
+        opacity: 0;
+    }
+    73% {
+        opacity: 0;
+    }
+    74% {
+        opacity: 1;
+        transform: rotateZ(0deg);
+    }
+    80% {
+        transform: rotateZ(120deg);
+    }
+    94% {
+        transform: rotateZ(-10deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}

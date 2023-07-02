@@ -1,0 +1,42 @@
+$sirina: 420px;
+$guter: 12px;
+$razmak: 9px;
+$glava: 18%;
+$trup: 40%;
+$razmah: 40deg;
+$cifra: 50px;
+
+$tm: ease-in;
+$dur: 0.2s;
+
+$teget: #020304;
+$pozadina: $teget;
+$tamna: #272727;
+$tamnaPlus: lighten($tamna, 10%);
+$siva: lighten($teget, 20%);
+$sivaPlus: lighten($siva, 10%);
+$zelena: #007744;
+$crvena: #C21F39;
+$gotovNivo: darken(gold, 2%);
+
+
+$bojaImenice: $zelena;
+$bojaPridevi: #a2af13;
+$bojaZamenice: #51932c;
+$bojaBrojevi: #e1b536;
+$bojaGlagoli: #e27d64;
+$bojaPrilozi: #e24591;
+$bojaPredlozi: #735AA2;
+$bojaVeznici: #036eb3;
+$bojaReczce: #33bebc;
+$bojaUzvici: #1A9B80;
+
+$bojaSertifikat: #08334c;
+
+$bojaJeste: $zelena;
+$bojaNije: $crvena;
+
+$fino: rgba(0,0,0,0.1);
+$border: rgba(255, 255, 255, 0.1);
+
+$md: 768px;

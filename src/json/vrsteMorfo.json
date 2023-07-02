@@ -1,0 +1,88 @@
+[
+
+    {
+        "jednina": "imenica",
+        "jedninaAkuzativ": "imenicu",
+        "mnozina": "imenice",
+        "mnozinaGenitiv": "imenica",
+        "mnozinaAkuzativ": "imenice",
+        "tacno": true,
+        "tekst": "Imenice su promenljive reči koje označavaju bića, predmete, pojave, geografske ili apstraktne pojmove. # Mogu biti muškog, ženskog ili srednjeg roda. # Po broju mogu biti u jednini ili množini, a postoje i zbirne imenice, koje oblikom jednine označavaju množinu. # Uvek su u jednom od sedam padeža: nominativ, genitiv, dativ, akuzativ, vokativ, instrumental, lokativ. # Mogu biti lične ili zajedničke. # U posebne kategorije imenica spadaju zbirne, gradivne, glagolske i apstraktne imenice."
+    },
+    {
+        "jednina": "zamenica",
+        "jedninaAkuzativ": "zamenicu",
+        "mnozina": "zamenice",
+        "mnozinaGenitiv": "zamenica",
+        "mnozinaAkuzativ": "zamenice",
+        "tacno": true,
+        "tekst": "Zamenice u rečenici stoje tamo gde bi mogle da stoje druge vrste reči, pre svega imenice ili pridevi. Dele se na lične, prisvojne, pokazne, upitne, odnosne, neodređene, odrične, opšte i povratne. Prve dve grupe imaju kategoriju lica (prvo, drugo i treće lice jednine i množine)"
+    },
+    {
+        "jednina": "pridev",
+        "mnozina": "pridevi",
+        "mnozinaGenitiv": "prideva",
+        "mnozinaAkuzativ": "prideve",
+        "tacno": true,
+        "tekst": "Pridevi su promenljive reči koje stoje uz imenice, bliže ih određuju i od njih preuzimaju rod, broj i padež. Mogu biti opisni i odnosni. Imaju određeni i neodređeni vid i tri stepena poređenja."
+    },
+    {
+        "jednina": "broj",
+        "mnozina": "brojevi",
+        "dvojinaGenitiv": "broja",
+        "mnozinaGenitiv": "brojeva",
+        "mnozinaAkuzativ": "brojeve",
+        "tacno": true,
+        "tekst": "Brojevima označavamo meru, količinu ili brojnost bića ili predmeta. Dele se na osnovne, redne i zbirne. Redni brojevi su promenljivi, i u rodu, broju i padežu se slažu sa imenicom ispred koje stoje, dakle ponašaju se kao pridevi. Osnovni i zbirni brojevi se obično ponašaju kao prilozi za količinu, dakle kao nepromenljive reči, i imenica ispred njih stoji u genitivu množine."
+    },
+    {
+        "jednina": "glagol",
+        "mnozina": "glagoli",
+        "mnozinaGenitiv": "glagola",
+        "mnozinaAkuzativ": "glagole",
+        "tacno": true,
+        "tekst": "Glagoli su promenljive reči koje označavaju radnju, stanje ili zbivanje. # Mogu biti u sadašnjem, prošlom ili budućem vremenu, kao i u zapovednom ili mogućem načinu. # Po postojanju ili nepostojanju objekta radnje delimo ih na prelazne, neprelazne i povratne, a po trajnosti radnje na trajne i svršene. # Neki glagolski oblici imaju kategoriju lica i broja i zovu se lični, drugi je nemaju i zovu se bezlični. # Glagolski pridevi (participi), kao i obični pridevi, imaju i kategoriju roda."
+    },
+    {
+        "jednina": "prilog",
+        "mnozina": "prilozi",
+        "mnozinaGenitiv": "priloga",
+        "mnozinaAkuzativ": "priloge",
+        "tacno": true,
+        "tekst": "Prilozi su reči koje bliže određuju reč ili celu rečenicu. Obično stoje uz glagole, prideve ili druge priloge. # Spadaju u nepromenljive reči, premda prilozi koji su izvedeni od prideva (brzo, lepo, dobro) imaju i stepene poređenja kao i pridevi."
+    },
+    {
+        "jednina": "predlog",
+        "mnozina": "predlozi",
+        "mnozinaGenitiv": "predloga",
+        "mnozinaAkuzativ": "predloge",
+        "tacno": true,
+        "tekst": "Predlozi su nepromenljive reči koje stoje ispred imenice ili zamenice i izražavaju prostorne i druge odnose prema njoj, kao „iz”, „od”, „u”, „na”, „zbog”, „bez”..."
+    },
+    {
+        "jednina": "veznik",
+        "mnozina": "veznici",
+        "mnozinaGenitiv": "veznika",
+        "mnozinaAkuzativ": "veznike",
+        "tacno": true,
+        "tekst": "Veznici su nepromenljive reči koje međusobno spajaju odnosno razdvajaju rečenice i rečenične delove, na primer „i”, „ili”, „ali”, „jer”, „kad”, „gde”..."
+    },
+    {
+        "jednina": "rečca",
+        "mnozina": "rečce",
+        "mnozinaGenitiv": "rečci",
+        "mnozinaAkuzativ": "rečce",
+        "jedninaAkuzativ": "rečcu",
+        "tacno": true,
+        "tekst": "Rečce (partikule) su nepromenljive i sintaksički nesamostalne reči bliske prilozima i veznicima. Njima se izražava lični stav prema onome što se u rečenici saopštava. # Najviše su u upotrebi potvrdna rečca „da”, odrična „ne”, imperativna „nek / neka” i upitne „li” i „zar”."
+    },
+    {
+        "jednina": "uzvik",
+        "mnozina": "uzvici",
+        "mnozinaGenitiv": "uzvika",
+        "mnozinaAkuzativ": "uzvike",
+        "tacno": true,
+        "tekst": "Uzvici su nezavisne reči, koje funkcionišu kao zasebni iskazi. # Ekspresivni uzvici su vezani za prvo lice i izražavaju emocije ili raspoloženja (ah, eh, ih, oh, uh, ohoho, opa, aha, haha, hm, fuj, joj, ajoj, ups, lol, uau, uot, demit). # Druga vrsta su imperativni uzvici, vezani za drugo lice, i oni služe za obraćanje, podsticanje, teranje ili skretanje pažnje (ej, alo, bre, hajde, ajde, šic, mrš, kuš). # Treću vrstu uzvika čine onomatopeje, reči koje podražavaju zvuke iz spoljnog sveta (bum, tras, zvrrr, grrr, brrr, dždž, mu, ćiju, zvekete, mekete)."
+    }
+
+]

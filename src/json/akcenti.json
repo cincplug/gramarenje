@@ -1,0 +1,18 @@
+[
+    {
+        "ime": "kratkosilazni",
+        "znak": "‶"
+    },
+    {
+        "ime": "kratkouzlazni",
+        "znak": "`"
+    },
+    {
+        "ime": "dugosilazni",
+        "znak": "⁀"
+    },
+    {
+        "ime": "dugouzlazni",
+        "znak": "´"
+    }
+]

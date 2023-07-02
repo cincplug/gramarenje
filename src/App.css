@@ -1,38 +1,2192 @@
-.App {
-  text-align: center;
-}
+@keyframes precrtaj {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@keyframes pretapanje {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+@keyframes uskakanje {
+  0% {
+    transform: scale(0.98); }
+  64% {
+    transform: scale(1.03); }
+  100% {
+    transform: scale(1); } }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@keyframes svrati {
+  0% {
+    height: 100%; }
+  2% {
+    height: 104%; }
+  84% {
+    height: 110%; }
+  100% {
+    height: 0; } }
+
+@keyframes aktivnaVrsta {
+  0% {
+    transform: rotateZ(-1deg) translateY(5px); }
+  100% {
+    transform: rotateZ(0deg) translateY(0); } }
+
+@keyframes leziLevo {
+  0% {
+    transform: rotateZ(-0.5deg) translateY(5px); }
+  100% {
+    transform: rotateZ(0deg) translateY(0); } }
+
+@keyframes idi {
+  0% {
+    border-color: transparent; }
+  100% {
+    border-color: transparent;
+    transform: rotateZ(100deg);
+    opacity: 0; } }
+
+@keyframes leziDesno {
+  0% {
+    transform: rotateZ(0.5deg) translateY(5px); }
+  100% {
+    transform: rotateZ(0deg) translateY(0); } }
+
+@keyframes rasiri {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+
+@keyframes zadrhti {
+  0% {
+    transform: rotateZ(0deg); }
+  10% {
+    transform: rotateZ(2deg); }
+  20% {
+    transform: rotateZ(-2deg); }
+  56% {
+    transform: rotateZ(1deg); }
+  74% {
+    transform: rotateZ(-1deg); }
+  94% {
+    transform: rotateZ(0.3deg); }
+  98% {
+    transform: rotateZ(0.3deg); } }
+
+@keyframes uvod {
+  0% {
+    transform: scale(0); }
+  40% {
+    transform: scale(0); }
+  42% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1) rotateZ(0deg); }
+  60% {
+    transform: rotateZ(-2deg); }
+  74% {
+    transform: rotateZ(1deg); }
+  88% {
+    transform: rotateZ(-1deg); }
+  94% {
+    transform: rotateZ(0.3deg); }
+  98% {
+    transform: rotateZ(0.3deg); } }
+
+@keyframes zavrti {
+  0% {
+    transform: rotateZ(0deg); }
+  25% {
+    transform: rotateZ(240deg); }
+  90% {
+    transform: rotateZ(-10deg); }
+  100% {
+    transform: rotateZ(0deg); } }
+
+@keyframes obrniDesno {
+  0% {
+    transform: rotateZ(0deg); }
+  15% {
+    transform: rotateZ(-280deg); }
+  100% {
+    transform: rotateZ(0deg); } }
+
+@keyframes obrniLevo {
+  0% {
+    transform: rotateZ(0deg); }
+  15% {
+    transform: rotateZ(280deg); }
+  100% {
+    transform: rotateZ(0deg); } }
+
+@keyframes noviNivo {
+  0% {
+    opacity: 0; }
+  73% {
+    opacity: 0; }
+  74% {
+    opacity: 1;
+    transform: rotateZ(0deg); }
+  80% {
+    transform: rotateZ(120deg); }
+  94% {
+    transform: rotateZ(-10deg); }
+  100% {
+    transform: rotateZ(0deg); } }
+
+body {
   color: white;
-}
+  background: #1a2734;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  font-family: 'Roboto Slab', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; }
 
-.App-link {
-  color: #61dafb;
-}
+h1 {
+  font-size: 27px;
+  margin: 0; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+h2 {
+  font-size: 24px;
+  margin: 0;
+  line-height: 32px; }
+
+:focus {
+  outline: none; }
+
+button, .button {
+  margin: 0 4px 4px 0;
+  padding: 3px 8px;
+  font-size: 11px;
+  border: none;
+  border-radius: 0;
+  color: white;
+  background: #243648;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: 'Roboto Slab', sans-serif; }
+  button:hover, .button:hover {
+    background: #35506a;
+    transition: border-color 0.2s ease;
+    cursor: pointer; }
+
+.klikabl:hover {
+  cursor: pointer; }
+
+.text-left {
+  text-align: left; }
+
+.float-left {
+  float: left; }
+
+.text-right {
+  text-align: right; }
+
+.float-right {
+  float: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-normal {
+  font-weight: normal; }
+
+.text-bold {
+  font-weight: bold; }
+
+.clearfix:after {
+  display: table;
+  content: '';
+  width: 100%;
+  height: 0;
+  clear: both; }
+
+.json {
+  word-wrap: break-word; }
+
+.imenice, .kratkouzlazni {
+  background: #007744; }
+  .imenice.dokTrajePrvi.klikno.tacno, .kratkouzlazni.dokTrajePrvi.klikno.tacno {
+    background: #007744; }
+  .imenice.dokTrajeDrugi.neaktivna.josNijeResena:hover, .kratkouzlazni.dokTrajeDrugi.neaktivna.josNijeResena:hover {
+    background: #007744; }
+  .imenice.dokTrajeDrugi.aktivna .Razlog, .imenice.dokTrajeDrugi.aktivna .letvica, .kratkouzlazni.dokTrajeDrugi.aktivna .Razlog, .kratkouzlazni.dokTrajeDrugi.aktivna .letvica {
+    border-top-color: #007744; }
+  .imenice.resena .bravo, .kratkouzlazni.resena .bravo {
+    background: #007744; }
+  .imenice .Pitanje .bravo, .kratkouzlazni .Pitanje .bravo {
+    color: #007744 !important; }
+
+.imenica {
+  color: #007744; }
+  .oblast-fono .imenica.klikno.tacno {
+    background: #007744;
+    border-color: #007744;
+    color: white;
+    border-left-color: white; }
+  .imenica.klikno.tacno .tekst .tekst {
+    position: relative;
+    color: white; }
+    .imenica.klikno.tacno .tekst .tekst:after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: -4px;
+      top: 3px;
+      width: calc(100% + 6px);
+      height: calc(100% - 4px);
+      background: #007744;
+      z-index: -1; }
+      .oblast-fono .imenica.klikno.tacno .tekst .tekst:after {
+        background: none; }
+  .Front .imenica.klikno.tacno {
+    position: relative; }
+    .Front .imenica.klikno.tacno .crta {
+      display: block;
+      position: absolute;
+      stroke: #007744;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .Front .imenica.klikno.tacno .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .imenica.klikno.netacno .tekst {
+    position: relative; }
+    .imenica.klikno.netacno .tekst .crta {
+      display: block;
+      position: absolute;
+      stroke: #007744;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+  .imenica.pregled {
+    position: relative; }
+    .imenica.pregled .crta {
+      display: block;
+      position: absolute;
+      stroke: #007744;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .imenica.pregled .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .Baza .imenica.Vrsta-baza,
+  .Baza .imenica.izabranaVrsta {
+    background: #007744; }
+  .Baza .imenica.Rec-baza {
+    color: #007744; }
+
+.pridevi, .promene {
+  background: #a2af13; }
+  .pridevi.dokTrajePrvi.klikno.tacno, .promene.dokTrajePrvi.klikno.tacno {
+    background: #a2af13; }
+  .pridevi.dokTrajeDrugi.neaktivna.josNijeResena:hover, .promene.dokTrajeDrugi.neaktivna.josNijeResena:hover {
+    background: #a2af13; }
+  .pridevi.dokTrajeDrugi.aktivna .Razlog, .pridevi.dokTrajeDrugi.aktivna .letvica, .promene.dokTrajeDrugi.aktivna .Razlog, .promene.dokTrajeDrugi.aktivna .letvica {
+    border-top-color: #a2af13; }
+  .pridevi.resena .bravo, .promene.resena .bravo {
+    background: #a2af13; }
+  .pridevi .Pitanje .bravo, .promene .Pitanje .bravo {
+    color: #a2af13 !important; }
+
+.pridev, .alter {
+  color: #a2af13; }
+  .oblast-fono .pridev.klikno.tacno, .oblast-fono .alter.klikno.tacno {
+    background: #a2af13;
+    border-color: #a2af13;
+    color: white;
+    border-left-color: white; }
+  .pridev.klikno.tacno .tekst .tekst, .alter.klikno.tacno .tekst .tekst {
+    position: relative;
+    color: white; }
+    .pridev.klikno.tacno .tekst .tekst:after, .alter.klikno.tacno .tekst .tekst:after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: -4px;
+      top: 3px;
+      width: calc(100% + 6px);
+      height: calc(100% - 4px);
+      background: #a2af13;
+      z-index: -1; }
+      .oblast-fono .pridev.klikno.tacno .tekst .tekst:after, .oblast-fono .alter.klikno.tacno .tekst .tekst:after {
+        background: none; }
+  .Front .pridev.klikno.tacno, .Front .alter.klikno.tacno {
+    position: relative; }
+    .Front .pridev.klikno.tacno .crta, .Front .alter.klikno.tacno .crta {
+      display: block;
+      position: absolute;
+      stroke: #a2af13;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .Front .pridev.klikno.tacno .crta, .Front .alter.klikno.tacno .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .pridev.klikno.netacno .tekst, .alter.klikno.netacno .tekst {
+    position: relative; }
+    .pridev.klikno.netacno .tekst .crta, .alter.klikno.netacno .tekst .crta {
+      display: block;
+      position: absolute;
+      stroke: #a2af13;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+  .pridev.pregled, .alter.pregled {
+    position: relative; }
+    .pridev.pregled .crta, .alter.pregled .crta {
+      display: block;
+      position: absolute;
+      stroke: #a2af13;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .pridev.pregled .crta, .alter.pregled .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .Baza .pridev.Vrsta-baza,
+  .Baza .pridev.izabranaVrsta, .Baza .alter.Vrsta-baza,
+  .Baza .alter.izabranaVrsta {
+    background: #a2af13; }
+  .Baza .pridev.Rec-baza, .Baza .alter.Rec-baza {
+    color: #a2af13; }
+
+.zamenice, .kratkosilazni {
+  background: #51932c; }
+  .zamenice.dokTrajePrvi.klikno.tacno, .kratkosilazni.dokTrajePrvi.klikno.tacno {
+    background: #51932c; }
+  .zamenice.dokTrajeDrugi.neaktivna.josNijeResena:hover, .kratkosilazni.dokTrajeDrugi.neaktivna.josNijeResena:hover {
+    background: #51932c; }
+  .zamenice.dokTrajeDrugi.aktivna .Razlog, .zamenice.dokTrajeDrugi.aktivna .letvica, .kratkosilazni.dokTrajeDrugi.aktivna .Razlog, .kratkosilazni.dokTrajeDrugi.aktivna .letvica {
+    border-top-color: #51932c; }
+  .zamenice.resena .bravo, .kratkosilazni.resena .bravo {
+    background: #51932c; }
+  .zamenice .Pitanje .bravo, .kratkosilazni .Pitanje .bravo {
+    color: #51932c !important; }
+
+.zamenica {
+  color: #51932c; }
+  .oblast-fono .zamenica.klikno.tacno {
+    background: #51932c;
+    border-color: #51932c;
+    color: white;
+    border-left-color: white; }
+  .zamenica.klikno.tacno .tekst .tekst {
+    position: relative;
+    color: white; }
+    .zamenica.klikno.tacno .tekst .tekst:after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: -4px;
+      top: 3px;
+      width: calc(100% + 6px);
+      height: calc(100% - 4px);
+      background: #51932c;
+      z-index: -1; }
+      .oblast-fono .zamenica.klikno.tacno .tekst .tekst:after {
+        background: none; }
+  .Front .zamenica.klikno.tacno {
+    position: relative; }
+    .Front .zamenica.klikno.tacno .crta {
+      display: block;
+      position: absolute;
+      stroke: #51932c;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .Front .zamenica.klikno.tacno .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .zamenica.klikno.netacno .tekst {
+    position: relative; }
+    .zamenica.klikno.netacno .tekst .crta {
+      display: block;
+      position: absolute;
+      stroke: #51932c;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+  .zamenica.pregled {
+    position: relative; }
+    .zamenica.pregled .crta {
+      display: block;
+      position: absolute;
+      stroke: #51932c;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .zamenica.pregled .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .Baza .zamenica.Vrsta-baza,
+  .Baza .zamenica.izabranaVrsta {
+    background: #51932c; }
+  .Baza .zamenica.Rec-baza {
+    color: #51932c; }
+
+.brojevi, .suglasnici {
+  background: #e1b536; }
+  .brojevi.dokTrajePrvi.klikno.tacno, .suglasnici.dokTrajePrvi.klikno.tacno {
+    background: #e1b536; }
+  .brojevi.dokTrajeDrugi.neaktivna.josNijeResena:hover, .suglasnici.dokTrajeDrugi.neaktivna.josNijeResena:hover {
+    background: #e1b536; }
+  .brojevi.dokTrajeDrugi.aktivna .Razlog, .brojevi.dokTrajeDrugi.aktivna .letvica, .suglasnici.dokTrajeDrugi.aktivna .Razlog, .suglasnici.dokTrajeDrugi.aktivna .letvica {
+    border-top-color: #e1b536; }
+  .brojevi.resena .bravo, .suglasnici.resena .bravo {
+    background: #e1b536; }
+  .brojevi .Pitanje .bravo, .suglasnici .Pitanje .bravo {
+    color: #e1b536 !important; }
+
+.broj, .suglasnik {
+  color: #e1b536; }
+  .oblast-fono .broj.klikno.tacno, .oblast-fono .suglasnik.klikno.tacno {
+    background: #e1b536;
+    border-color: #e1b536;
+    color: white;
+    border-left-color: white; }
+  .broj.klikno.tacno .tekst .tekst, .suglasnik.klikno.tacno .tekst .tekst {
+    position: relative;
+    color: white; }
+    .broj.klikno.tacno .tekst .tekst:after, .suglasnik.klikno.tacno .tekst .tekst:after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: -4px;
+      top: 3px;
+      width: calc(100% + 6px);
+      height: calc(100% - 4px);
+      background: #e1b536;
+      z-index: -1; }
+      .oblast-fono .broj.klikno.tacno .tekst .tekst:after, .oblast-fono .suglasnik.klikno.tacno .tekst .tekst:after {
+        background: none; }
+  .Front .broj.klikno.tacno, .Front .suglasnik.klikno.tacno {
+    position: relative; }
+    .Front .broj.klikno.tacno .crta, .Front .suglasnik.klikno.tacno .crta {
+      display: block;
+      position: absolute;
+      stroke: #e1b536;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .Front .broj.klikno.tacno .crta, .Front .suglasnik.klikno.tacno .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .broj.klikno.netacno .tekst, .suglasnik.klikno.netacno .tekst {
+    position: relative; }
+    .broj.klikno.netacno .tekst .crta, .suglasnik.klikno.netacno .tekst .crta {
+      display: block;
+      position: absolute;
+      stroke: #e1b536;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+  .broj.pregled, .suglasnik.pregled {
+    position: relative; }
+    .broj.pregled .crta, .suglasnik.pregled .crta {
+      display: block;
+      position: absolute;
+      stroke: #e1b536;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .broj.pregled .crta, .suglasnik.pregled .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .Baza .broj.Vrsta-baza,
+  .Baza .broj.izabranaVrsta, .Baza .suglasnik.Vrsta-baza,
+  .Baza .suglasnik.izabranaVrsta {
+    background: #e1b536; }
+  .Baza .broj.Rec-baza, .Baza .suglasnik.Rec-baza {
+    color: #e1b536; }
+
+.glagoli {
+  background: #e27d64; }
+  .glagoli.dokTrajePrvi.klikno.tacno {
+    background: #e27d64; }
+  .glagoli.dokTrajeDrugi.neaktivna.josNijeResena:hover {
+    background: #e27d64; }
+  .glagoli.dokTrajeDrugi.aktivna .Razlog, .glagoli.dokTrajeDrugi.aktivna .letvica {
+    border-top-color: #e27d64; }
+  .glagoli.resena .bravo {
+    background: #e27d64; }
+  .glagoli .Pitanje .bravo {
+    color: #e27d64 !important; }
+
+.glagol {
+  color: #e27d64; }
+  .oblast-fono .glagol.klikno.tacno {
+    background: #e27d64;
+    border-color: #e27d64;
+    color: white;
+    border-left-color: white; }
+  .glagol.klikno.tacno .tekst .tekst {
+    position: relative;
+    color: white; }
+    .glagol.klikno.tacno .tekst .tekst:after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: -4px;
+      top: 3px;
+      width: calc(100% + 6px);
+      height: calc(100% - 4px);
+      background: #e27d64;
+      z-index: -1; }
+      .oblast-fono .glagol.klikno.tacno .tekst .tekst:after {
+        background: none; }
+  .Front .glagol.klikno.tacno {
+    position: relative; }
+    .Front .glagol.klikno.tacno .crta {
+      display: block;
+      position: absolute;
+      stroke: #e27d64;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .Front .glagol.klikno.tacno .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .glagol.klikno.netacno .tekst {
+    position: relative; }
+    .glagol.klikno.netacno .tekst .crta {
+      display: block;
+      position: absolute;
+      stroke: #e27d64;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+  .glagol.pregled {
+    position: relative; }
+    .glagol.pregled .crta {
+      display: block;
+      position: absolute;
+      stroke: #e27d64;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .glagol.pregled .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .Baza .glagol.Vrsta-baza,
+  .Baza .glagol.izabranaVrsta {
+    background: #e27d64; }
+  .Baza .glagol.Rec-baza {
+    color: #e27d64; }
+
+.prilozi {
+  background: #e24591; }
+  .prilozi.dokTrajePrvi.klikno.tacno {
+    background: #e24591; }
+  .prilozi.dokTrajeDrugi.neaktivna.josNijeResena:hover {
+    background: #e24591; }
+  .prilozi.dokTrajeDrugi.aktivna .Razlog, .prilozi.dokTrajeDrugi.aktivna .letvica {
+    border-top-color: #e24591; }
+  .prilozi.resena .bravo {
+    background: #e24591; }
+  .prilozi .Pitanje .bravo {
+    color: #e24591 !important; }
+
+.prilog {
+  color: #e24591; }
+  .oblast-fono .prilog.klikno.tacno {
+    background: #e24591;
+    border-color: #e24591;
+    color: white;
+    border-left-color: white; }
+  .prilog.klikno.tacno .tekst .tekst {
+    position: relative;
+    color: white; }
+    .prilog.klikno.tacno .tekst .tekst:after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: -4px;
+      top: 3px;
+      width: calc(100% + 6px);
+      height: calc(100% - 4px);
+      background: #e24591;
+      z-index: -1; }
+      .oblast-fono .prilog.klikno.tacno .tekst .tekst:after {
+        background: none; }
+  .Front .prilog.klikno.tacno {
+    position: relative; }
+    .Front .prilog.klikno.tacno .crta {
+      display: block;
+      position: absolute;
+      stroke: #e24591;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .Front .prilog.klikno.tacno .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .prilog.klikno.netacno .tekst {
+    position: relative; }
+    .prilog.klikno.netacno .tekst .crta {
+      display: block;
+      position: absolute;
+      stroke: #e24591;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+  .prilog.pregled {
+    position: relative; }
+    .prilog.pregled .crta {
+      display: block;
+      position: absolute;
+      stroke: #e24591;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .prilog.pregled .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .Baza .prilog.Vrsta-baza,
+  .Baza .prilog.izabranaVrsta {
+    background: #e24591; }
+  .Baza .prilog.Rec-baza {
+    color: #e24591; }
+
+.predlozi, .akcenti {
+  background: #735AA2; }
+  .predlozi.dokTrajePrvi.klikno.tacno, .akcenti.dokTrajePrvi.klikno.tacno {
+    background: #735AA2; }
+  .predlozi.dokTrajeDrugi.neaktivna.josNijeResena:hover, .akcenti.dokTrajeDrugi.neaktivna.josNijeResena:hover {
+    background: #735AA2; }
+  .predlozi.dokTrajeDrugi.aktivna .Razlog, .predlozi.dokTrajeDrugi.aktivna .letvica, .akcenti.dokTrajeDrugi.aktivna .Razlog, .akcenti.dokTrajeDrugi.aktivna .letvica {
+    border-top-color: #735AA2; }
+  .predlozi.resena .bravo, .akcenti.resena .bravo {
+    background: #735AA2; }
+  .predlozi .Pitanje .bravo, .akcenti .Pitanje .bravo {
+    color: #735AA2 !important; }
+
+.predlog, .akcenat {
+  color: #735AA2; }
+  .oblast-fono .predlog.klikno.tacno, .oblast-fono .akcenat.klikno.tacno {
+    background: #735AA2;
+    border-color: #735AA2;
+    color: white;
+    border-left-color: white; }
+  .predlog.klikno.tacno .tekst .tekst, .akcenat.klikno.tacno .tekst .tekst {
+    position: relative;
+    color: white; }
+    .predlog.klikno.tacno .tekst .tekst:after, .akcenat.klikno.tacno .tekst .tekst:after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: -4px;
+      top: 3px;
+      width: calc(100% + 6px);
+      height: calc(100% - 4px);
+      background: #735AA2;
+      z-index: -1; }
+      .oblast-fono .predlog.klikno.tacno .tekst .tekst:after, .oblast-fono .akcenat.klikno.tacno .tekst .tekst:after {
+        background: none; }
+  .Front .predlog.klikno.tacno, .Front .akcenat.klikno.tacno {
+    position: relative; }
+    .Front .predlog.klikno.tacno .crta, .Front .akcenat.klikno.tacno .crta {
+      display: block;
+      position: absolute;
+      stroke: #735AA2;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .Front .predlog.klikno.tacno .crta, .Front .akcenat.klikno.tacno .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .predlog.klikno.netacno .tekst, .akcenat.klikno.netacno .tekst {
+    position: relative; }
+    .predlog.klikno.netacno .tekst .crta, .akcenat.klikno.netacno .tekst .crta {
+      display: block;
+      position: absolute;
+      stroke: #735AA2;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+  .predlog.pregled, .akcenat.pregled {
+    position: relative; }
+    .predlog.pregled .crta, .akcenat.pregled .crta {
+      display: block;
+      position: absolute;
+      stroke: #735AA2;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .predlog.pregled .crta, .akcenat.pregled .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .Baza .predlog.Vrsta-baza,
+  .Baza .predlog.izabranaVrsta, .Baza .akcenat.Vrsta-baza,
+  .Baza .akcenat.izabranaVrsta {
+    background: #735AA2; }
+  .Baza .predlog.Rec-baza, .Baza .akcenat.Rec-baza {
+    color: #735AA2; }
+
+.veznici {
+  background: #036eb3; }
+  .veznici.dokTrajePrvi.klikno.tacno {
+    background: #036eb3; }
+  .veznici.dokTrajeDrugi.neaktivna.josNijeResena:hover {
+    background: #036eb3; }
+  .veznici.dokTrajeDrugi.aktivna .Razlog, .veznici.dokTrajeDrugi.aktivna .letvica {
+    border-top-color: #036eb3; }
+  .veznici.resena .bravo {
+    background: #036eb3; }
+  .veznici .Pitanje .bravo {
+    color: #036eb3 !important; }
+
+.veznik {
+  color: #036eb3; }
+  .oblast-fono .veznik.klikno.tacno {
+    background: #036eb3;
+    border-color: #036eb3;
+    color: white;
+    border-left-color: white; }
+  .veznik.klikno.tacno .tekst .tekst {
+    position: relative;
+    color: white; }
+    .veznik.klikno.tacno .tekst .tekst:after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: -4px;
+      top: 3px;
+      width: calc(100% + 6px);
+      height: calc(100% - 4px);
+      background: #036eb3;
+      z-index: -1; }
+      .oblast-fono .veznik.klikno.tacno .tekst .tekst:after {
+        background: none; }
+  .Front .veznik.klikno.tacno {
+    position: relative; }
+    .Front .veznik.klikno.tacno .crta {
+      display: block;
+      position: absolute;
+      stroke: #036eb3;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .Front .veznik.klikno.tacno .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .veznik.klikno.netacno .tekst {
+    position: relative; }
+    .veznik.klikno.netacno .tekst .crta {
+      display: block;
+      position: absolute;
+      stroke: #036eb3;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+  .veznik.pregled {
+    position: relative; }
+    .veznik.pregled .crta {
+      display: block;
+      position: absolute;
+      stroke: #036eb3;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .veznik.pregled .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .Baza .veznik.Vrsta-baza,
+  .Baza .veznik.izabranaVrsta {
+    background: #036eb3; }
+  .Baza .veznik.Rec-baza {
+    color: #036eb3; }
+
+.re_ce, .dugouzlazni {
+  background: #33bebc; }
+  .re_ce.dokTrajePrvi.klikno.tacno, .dugouzlazni.dokTrajePrvi.klikno.tacno {
+    background: #33bebc; }
+  .re_ce.dokTrajeDrugi.neaktivna.josNijeResena:hover, .dugouzlazni.dokTrajeDrugi.neaktivna.josNijeResena:hover {
+    background: #33bebc; }
+  .re_ce.dokTrajeDrugi.aktivna .Razlog, .re_ce.dokTrajeDrugi.aktivna .letvica, .dugouzlazni.dokTrajeDrugi.aktivna .Razlog, .dugouzlazni.dokTrajeDrugi.aktivna .letvica {
+    border-top-color: #33bebc; }
+  .re_ce.resena .bravo, .dugouzlazni.resena .bravo {
+    background: #33bebc; }
+  .re_ce .Pitanje .bravo, .dugouzlazni .Pitanje .bravo {
+    color: #33bebc !important; }
+
+.re_ca {
+  color: #33bebc; }
+  .oblast-fono .re_ca.klikno.tacno {
+    background: #33bebc;
+    border-color: #33bebc;
+    color: white;
+    border-left-color: white; }
+  .re_ca.klikno.tacno .tekst .tekst {
+    position: relative;
+    color: white; }
+    .re_ca.klikno.tacno .tekst .tekst:after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: -4px;
+      top: 3px;
+      width: calc(100% + 6px);
+      height: calc(100% - 4px);
+      background: #33bebc;
+      z-index: -1; }
+      .oblast-fono .re_ca.klikno.tacno .tekst .tekst:after {
+        background: none; }
+  .Front .re_ca.klikno.tacno {
+    position: relative; }
+    .Front .re_ca.klikno.tacno .crta {
+      display: block;
+      position: absolute;
+      stroke: #33bebc;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .Front .re_ca.klikno.tacno .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .re_ca.klikno.netacno .tekst {
+    position: relative; }
+    .re_ca.klikno.netacno .tekst .crta {
+      display: block;
+      position: absolute;
+      stroke: #33bebc;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+  .re_ca.pregled {
+    position: relative; }
+    .re_ca.pregled .crta {
+      display: block;
+      position: absolute;
+      stroke: #33bebc;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .re_ca.pregled .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .Baza .re_ca.Vrsta-baza,
+  .Baza .re_ca.izabranaVrsta {
+    background: #33bebc; }
+  .Baza .re_ca.Rec-baza {
+    color: #33bebc; }
+
+.uzvici, .samoglasnici, .dugosilazni {
+  background: #1A9B80; }
+  .uzvici.dokTrajePrvi.klikno.tacno, .samoglasnici.dokTrajePrvi.klikno.tacno, .dugosilazni.dokTrajePrvi.klikno.tacno {
+    background: #1A9B80; }
+  .uzvici.dokTrajeDrugi.neaktivna.josNijeResena:hover, .samoglasnici.dokTrajeDrugi.neaktivna.josNijeResena:hover, .dugosilazni.dokTrajeDrugi.neaktivna.josNijeResena:hover {
+    background: #1A9B80; }
+  .uzvici.dokTrajeDrugi.aktivna .Razlog, .uzvici.dokTrajeDrugi.aktivna .letvica, .samoglasnici.dokTrajeDrugi.aktivna .Razlog, .samoglasnici.dokTrajeDrugi.aktivna .letvica, .dugosilazni.dokTrajeDrugi.aktivna .Razlog, .dugosilazni.dokTrajeDrugi.aktivna .letvica {
+    border-top-color: #1A9B80; }
+  .uzvici.resena .bravo, .samoglasnici.resena .bravo, .dugosilazni.resena .bravo {
+    background: #1A9B80; }
+  .uzvici .Pitanje .bravo, .samoglasnici .Pitanje .bravo, .dugosilazni .Pitanje .bravo {
+    color: #1A9B80 !important; }
+
+.uzvik, .samoglasnik {
+  color: #1A9B80; }
+  .oblast-fono .uzvik.klikno.tacno, .oblast-fono .samoglasnik.klikno.tacno {
+    background: #1A9B80;
+    border-color: #1A9B80;
+    color: white;
+    border-left-color: white; }
+  .uzvik.klikno.tacno .tekst .tekst, .samoglasnik.klikno.tacno .tekst .tekst {
+    position: relative;
+    color: white; }
+    .uzvik.klikno.tacno .tekst .tekst:after, .samoglasnik.klikno.tacno .tekst .tekst:after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: -4px;
+      top: 3px;
+      width: calc(100% + 6px);
+      height: calc(100% - 4px);
+      background: #1A9B80;
+      z-index: -1; }
+      .oblast-fono .uzvik.klikno.tacno .tekst .tekst:after, .oblast-fono .samoglasnik.klikno.tacno .tekst .tekst:after {
+        background: none; }
+  .Front .uzvik.klikno.tacno, .Front .samoglasnik.klikno.tacno {
+    position: relative; }
+    .Front .uzvik.klikno.tacno .crta, .Front .samoglasnik.klikno.tacno .crta {
+      display: block;
+      position: absolute;
+      stroke: #1A9B80;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .Front .uzvik.klikno.tacno .crta, .Front .samoglasnik.klikno.tacno .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .uzvik.klikno.netacno .tekst, .samoglasnik.klikno.netacno .tekst {
+    position: relative; }
+    .uzvik.klikno.netacno .tekst .crta, .samoglasnik.klikno.netacno .tekst .crta {
+      display: block;
+      position: absolute;
+      stroke: #1A9B80;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+  .uzvik.pregled, .samoglasnik.pregled {
+    position: relative; }
+    .uzvik.pregled .crta, .samoglasnik.pregled .crta {
+      display: block;
+      position: absolute;
+      stroke: #1A9B80;
+      stroke-width: 5px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(2px);
+      left: 0;
+      top: 0;
+      animation: rasiri 0.1s ease-in; }
+    .uzvik.pregled .crta, .samoglasnik.pregled .crta {
+      top: 50%;
+      transform: none;
+      transform: rotateZ(0.5deg); }
+  .Baza .uzvik.Vrsta-baza,
+  .Baza .uzvik.izabranaVrsta, .Baza .samoglasnik.Vrsta-baza,
+  .Baza .samoglasnik.izabranaVrsta {
+    background: #1A9B80; }
+  .Baza .uzvik.Rec-baza, .Baza .samoglasnik.Rec-baza {
+    color: #1A9B80; }
+
+.leziLevo {
+  animation-name: leziLevo; }
+
+.leziDesno {
+  animation-name: leziDesno; }
+
+.a-dur-1 {
+  animation-duration: 10ms; }
+
+.t-dur-1 {
+  transition-duration: 10ms; }
+
+.a-dur-2 {
+  animation-duration: 20ms; }
+
+.t-dur-2 {
+  transition-duration: 20ms; }
+
+.a-dur-3 {
+  animation-duration: 30ms; }
+
+.t-dur-3 {
+  transition-duration: 30ms; }
+
+.a-dur-4 {
+  animation-duration: 40ms; }
+
+.t-dur-4 {
+  transition-duration: 40ms; }
+
+.a-dur-5 {
+  animation-duration: 50ms; }
+
+.t-dur-5 {
+  transition-duration: 50ms; }
+
+.a-dur-6 {
+  animation-duration: 60ms; }
+
+.t-dur-6 {
+  transition-duration: 60ms; }
+
+.a-dur-7 {
+  animation-duration: 70ms; }
+
+.t-dur-7 {
+  transition-duration: 70ms; }
+
+.a-dur-8 {
+  animation-duration: 80ms; }
+
+.t-dur-8 {
+  transition-duration: 80ms; }
+
+.a-dur-9 {
+  animation-duration: 90ms; }
+
+.t-dur-9 {
+  transition-duration: 90ms; }
+
+.a-dur-10 {
+  animation-duration: 100ms; }
+
+.t-dur-10 {
+  transition-duration: 100ms; }
+
+.a-dur-11 {
+  animation-duration: 110ms; }
+
+.t-dur-11 {
+  transition-duration: 110ms; }
+
+.a-dur-12 {
+  animation-duration: 120ms; }
+
+.t-dur-12 {
+  transition-duration: 120ms; }
+
+.a-dur-13 {
+  animation-duration: 130ms; }
+
+.t-dur-13 {
+  transition-duration: 130ms; }
+
+.a-dur-14 {
+  animation-duration: 140ms; }
+
+.t-dur-14 {
+  transition-duration: 140ms; }
+
+.a-dur-15 {
+  animation-duration: 150ms; }
+
+.t-dur-15 {
+  transition-duration: 150ms; }
+
+.a-dur-16 {
+  animation-duration: 160ms; }
+
+.t-dur-16 {
+  transition-duration: 160ms; }
+
+.a-dur-17 {
+  animation-duration: 170ms; }
+
+.t-dur-17 {
+  transition-duration: 170ms; }
+
+.a-dur-18 {
+  animation-duration: 180ms; }
+
+.t-dur-18 {
+  transition-duration: 180ms; }
+
+.a-dur-19 {
+  animation-duration: 190ms; }
+
+.t-dur-19 {
+  transition-duration: 190ms; }
+
+.a-dur-20 {
+  animation-duration: 200ms; }
+
+.t-dur-20 {
+  transition-duration: 200ms; }
+
+.a-dur-21 {
+  animation-duration: 210ms; }
+
+.t-dur-21 {
+  transition-duration: 210ms; }
+
+.a-dur-22 {
+  animation-duration: 220ms; }
+
+.t-dur-22 {
+  transition-duration: 220ms; }
+
+.a-dur-23 {
+  animation-duration: 230ms; }
+
+.t-dur-23 {
+  transition-duration: 230ms; }
+
+.a-dur-24 {
+  animation-duration: 240ms; }
+
+.t-dur-24 {
+  transition-duration: 240ms; }
+
+.a-dur-25 {
+  animation-duration: 250ms; }
+
+.t-dur-25 {
+  transition-duration: 250ms; }
+
+.a-dur-26 {
+  animation-duration: 260ms; }
+
+.t-dur-26 {
+  transition-duration: 260ms; }
+
+.a-dur-27 {
+  animation-duration: 270ms; }
+
+.t-dur-27 {
+  transition-duration: 270ms; }
+
+.a-dur-28 {
+  animation-duration: 280ms; }
+
+.t-dur-28 {
+  transition-duration: 280ms; }
+
+.a-dur-29 {
+  animation-duration: 290ms; }
+
+.t-dur-29 {
+  transition-duration: 290ms; }
+
+.a-dur-30 {
+  animation-duration: 300ms; }
+
+.t-dur-30 {
+  transition-duration: 300ms; }
+
+.a-dur-31 {
+  animation-duration: 310ms; }
+
+.t-dur-31 {
+  transition-duration: 310ms; }
+
+.a-dur-32 {
+  animation-duration: 320ms; }
+
+.t-dur-32 {
+  transition-duration: 320ms; }
+
+.a-dur-33 {
+  animation-duration: 330ms; }
+
+.t-dur-33 {
+  transition-duration: 330ms; }
+
+.a-dur-34 {
+  animation-duration: 340ms; }
+
+.t-dur-34 {
+  transition-duration: 340ms; }
+
+.a-dur-35 {
+  animation-duration: 350ms; }
+
+.t-dur-35 {
+  transition-duration: 350ms; }
+
+.a-dur-36 {
+  animation-duration: 360ms; }
+
+.t-dur-36 {
+  transition-duration: 360ms; }
+
+.a-dur-37 {
+  animation-duration: 370ms; }
+
+.t-dur-37 {
+  transition-duration: 370ms; }
+
+.a-dur-38 {
+  animation-duration: 380ms; }
+
+.t-dur-38 {
+  transition-duration: 380ms; }
+
+.a-dur-39 {
+  animation-duration: 390ms; }
+
+.t-dur-39 {
+  transition-duration: 390ms; }
+
+.a-dur-40 {
+  animation-duration: 400ms; }
+
+.t-dur-40 {
+  transition-duration: 400ms; }
+
+.a-dur-41 {
+  animation-duration: 410ms; }
+
+.t-dur-41 {
+  transition-duration: 410ms; }
+
+.a-dur-42 {
+  animation-duration: 420ms; }
+
+.t-dur-42 {
+  transition-duration: 420ms; }
+
+.a-dur-43 {
+  animation-duration: 430ms; }
+
+.t-dur-43 {
+  transition-duration: 430ms; }
+
+.a-dur-44 {
+  animation-duration: 440ms; }
+
+.t-dur-44 {
+  transition-duration: 440ms; }
+
+.a-dur-45 {
+  animation-duration: 450ms; }
+
+.t-dur-45 {
+  transition-duration: 450ms; }
+
+.a-dur-46 {
+  animation-duration: 460ms; }
+
+.t-dur-46 {
+  transition-duration: 460ms; }
+
+.a-dur-47 {
+  animation-duration: 470ms; }
+
+.t-dur-47 {
+  transition-duration: 470ms; }
+
+.a-dur-48 {
+  animation-duration: 480ms; }
+
+.t-dur-48 {
+  transition-duration: 480ms; }
+
+.a-dur-49 {
+  animation-duration: 490ms; }
+
+.t-dur-49 {
+  transition-duration: 490ms; }
+
+.a-dur-50 {
+  animation-duration: 500ms; }
+
+.t-dur-50 {
+  transition-duration: 500ms; }
+
+#root {
+  height: 100vh;
+  overflow-x: hidden; }
+
+.App {
+  background: #0b1015;
+  color: white;
+  margin: 0 auto;
+  max-width: 420px; }
+  .App:after {
+    display: table;
+    content: '';
+    width: 100%;
+    height: 0;
+    clear: both; }
+
+.Meni {
+  padding: 12px; }
+  .Meni:after {
+    display: table;
+    content: '';
+    width: 100%;
+    height: 0;
+    clear: both; }
+  .Meni .vege-burger {
+    float: left;
+    width: 24px;
+    height: 24px;
+    background: url("img/vege-burger.svg") no-repeat 0 0;
+    background-size: cover; }
+    .Meni .vege-burger:after {
+      display: table;
+      content: '';
+      width: 100%;
+      height: 0;
+      clear: both; }
+  .Meni .pismo-wrap {
+    width: 60px;
+    float: right; }
+    .Meni .pismo-wrap .Pismo {
+      float: right; }
+  .Meni.meni-true {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background: #46698c;
+    border-bottom: 1px solid #131d26;
+    box-shadow: 0 0 30px #272727; }
+    .Meni.meni-true .vege-burger {
+      background-image: url("img/iks-beli.svg"); }
+    .Meni.meni-true .dugmad {
+      float: left;
+      animation: leziDesno 0.1s ease-in;
+      display: block;
+      width: calc(100% - 60px);
+      margin-left: 12px; }
+    .Meni.meni-true .nivoi:after {
+      display: table;
+      content: '';
+      width: 100%;
+      height: 0;
+      clear: both; }
+    .Meni.meni-true .nivoi .gornje-dugme {
+      margin-left: 2px;
+      margin-right: 2px;
+      padding: 2px 5px 3px;
+      min-width: 20px;
+      float: left; }
+      .Meni.meni-true .nivoi .gornje-dugme.ovaj, .Meni.meni-true .nivoi .gornje-dugme:hover {
+        background: none; }
+      .Meni.meni-true .nivoi .gornje-dugme.ovaj {
+        cursor: default; }
+  .Meni.meni-false {
+    padding-bottom: 0; }
+
+.naslovNivoa {
+  padding: 12px 12px 7px;
+  animation: uskakanje 0.3s ease-in;
+  width: calc(100% - 100px);
+  float: left; }
+  .naslovNivoa h1 {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 10px 0 0; }
+  .naslovNivoa .nadnaslov {
+    margin: 0;
+    animation: leziLevo 0.4s ease-in; }
+  .naslovNivoa .podnaslov {
+    margin: 6px 0 12px;
+    font-size: 17px;
+    line-height: 18px;
+    font-family: 'Roboto Slab', sans-serif;
+    width: calc(100% + 60px); }
+
+.naslovVrste {
+  padding: 4px 12px 5px;
+  font-size: 17px;
+  text-transform: capitalize; }
+  .nivo-14 .naslovVrste {
+    text-transform: none; }
+
+.nadnaslov {
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+  font-family: 'Roboto Slab', sans-serif; }
+
+.Cifra {
+  position: fixed;
+  z-index: 1;
+  top: 12px;
+  right: 12px;
+  float: right;
+  background: url("img/cifra.svg") no-repeat 0 0;
+  background-size: contain;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 17px;
+  letter-spacing: 0.2px;
+  font-family: 'Roboto Slab', sans-serif;
+  color: #665600;
+  transition: all 1s ease-in;
+  animation: 0.3s ease-out;
+  transform-origin: 48%; }
+  .Cifra.vel-2 {
+    width: 40px;
+    height: 40px; }
+  .Cifra.vel-3 {
+    width: 45px;
+    height: 45px; }
+  .Cifra.vel-4 {
+    width: 50px;
+    height: 50px; }
+  .Cifra span {
+    position: absolute;
+    line-height: normal;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .Cifra.pad {
+    animation-name: obrniLevo; }
+  .Cifra.porast {
+    animation-name: obrniDesno; }
+  .Modal .Cifra {
+    animation: zavrti 1s ease-in;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 0 auto; }
+
+.crta {
+  display: none; }
+
+.SpisakVrsta {
+  clear: both; }
+  .fazon-izbor .SpisakVrsta {
+    margin: 6px; }
+
+.Vrsta {
+  animation: aktivnaVrsta 0.2s ease-in;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative; }
+  .Vrsta h2 {
+    font-weight: normal; }
+  .fazon-izbor .Vrsta {
+    margin: 6px;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.1); }
+    .fazon-izbor .Vrsta h2 {
+      background-color: rgba(128, 128, 128, 0.1); }
+  .fazon-izbor .Vrsta:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  .Vrsta.dokTrajePrvi {
+    cursor: pointer;
+    transition: background-color 0.2s ease-in !important; }
+    .Vrsta.dokTrajePrvi.nijeKlikno {
+      background: none; }
+      @media (min-width: 768px) {
+        .Vrsta.dokTrajePrvi.nijeKlikno:hover {
+          background: #243648; } }
+    .Vrsta.dokTrajePrvi.netacno h2, .Vrsta.dokTrajePrvi.nijeKlikno h2 {
+      color: rgba(255, 255, 255, 0.3); }
+  .Vrsta.tacno.klikno {
+    text-shadow: 0 0 1px white;
+    cursor: pointer;
+    transition-duration: 0.2s; }
+  .Vrsta.netacno.klikno {
+    cursor: default; }
+    .Vrsta.netacno.klikno.dokTrajePrvi .tekst {
+      display: inline-block;
+      color: #414141;
+      position: relative; }
+      .Vrsta.netacno.klikno.dokTrajePrvi .tekst .crta {
+        display: block;
+        position: absolute;
+        stroke: #f33;
+        stroke-width: 5px;
+        width: 100%;
+        height: 100%;
+        transform: translateY(2px);
+        left: 0;
+        top: 0;
+        animation: rasiri 0.1s ease-in; }
+    .Vrsta.netacno.klikno.dokTrajePrvi + .iks {
+      display: block; }
+  .Vrsta.netacno.gotovNivo {
+    opacity: 0;
+    border: none;
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    transition: all 0.3s ease-in; }
+    .Vrsta.netacno.gotovNivo:after, .Vrsta.netacno.gotovNivo:before {
+      display: none; }
+  .Vrsta.dokTrajeDrugi {
+    animation: pretapanje 0.2s ease-in; }
+    .Vrsta.dokTrajeDrugi.neaktivna {
+      border-bottom: none;
+      transition: none; }
+      .Vrsta.dokTrajeDrugi.neaktivna.josNijeResena {
+        background: transparent; }
+        .Vrsta.dokTrajeDrugi.neaktivna.josNijeResena .naslovVrste {
+          color: rgba(255, 255, 255, 0.5);
+          transition: color 0.2s ease-in;
+          background-color: #272727;
+          background: linear-gradient(to bottom, #131d26 0%, #1c2937 5%, #1d2c3a 100%); }
+          .Vrsta.dokTrajeDrugi.neaktivna.josNijeResena .naslovVrste:hover {
+            color: white; }
+          .Vrsta.dokTrajeDrugi.neaktivna.josNijeResena .naslovVrste:hover {
+            cursor: pointer; }
+            .Vrsta.dokTrajeDrugi.neaktivna.josNijeResena .naslovVrste:hover:after {
+              opacity: 0;
+              transition: opacity 0.2s ease-in; }
+      .Vrsta.dokTrajeDrugi.neaktivna .Pitanje {
+        display: none; }
+    .Vrsta.dokTrajeDrugi.aktivna {
+      animation: uskakanje 0.2s ease-in; }
+      .Vrsta.dokTrajeDrugi.aktivna .Izvor {
+        display: block;
+        text-align: right;
+        opacity: 0.7;
+        font-size: 12px;
+        line-height: 18px;
+        margin: -3px 12px 6px; }
+    .Vrsta.dokTrajeDrugi.resena {
+      transition: all 0.2s ease-in;
+      position: relative; }
+      .Vrsta.dokTrajeDrugi.resena .kvaka {
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation: zavrti 0.7s ease-in;
+        position: absolute;
+        margin: 15px 12px 0 0;
+        top: -4px;
+        right: 6px;
+        width: 20px;
+        height: 20px;
+        background: url("img/kvaka.svg");
+        background-size: cover;
+        z-index: 1; }
+    .Vrsta.dokTrajeDrugi.bio .jos,
+    .Vrsta.dokTrajeDrugi.bio .status {
+      animation: none; }
+  .Vrsta.nemaNaslov {
+    padding-top: 12px; }
+
+.tacno.klikno {
+  background: #243648; }
+
+.Pitanje {
+  padding: 12px;
+  margin: 0 12px 10px;
+  background: white;
+  color: #272727;
+  position: relative;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  animation: leziDesno 0.3s ease-in; }
+  .Pitanje .NaslovPitanja {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-family: 'Roboto Slab', sans-serif; }
+    .Pitanje .NaslovPitanja .nadnaslov {
+      margin: 1px 0 0; }
+    .Pitanje .NaslovPitanja .podnaslov {
+      line-height: 24px;
+      margin-top: 1px; }
+  .Pitanje .Potpitanje {
+    border-top: 1px solid #949494;
+    padding-top: 12px;
+    margin-top: 12px;
+    animation: leziDesno 0.2s ease-in; }
+    .Pitanje .Potpitanje .Dugme {
+      font-family: 'Roboto Slab', sans-serif;
+      font-size: 17px;
+      font-weight: normal;
+      position: relative;
+      padding: 4px 8px;
+      margin: 0 12px 12px 0;
+      color: white;
+      width: auto !important;
+      position: relative;
+      cursor: pointer;
+      animation-name: leziLevo;
+      box-sizing: border-box; }
+      .Pitanje .Potpitanje .Dugme .vrsta-akcenta {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 26px;
+        background: rgba(0, 0, 0, 0.1);
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+        overflow: hidden; }
+      .fazon-akcenat .Pitanje .Potpitanje .Dugme .tekst .crta,
+      .fazon-alter .Pitanje .Potpitanje .Dugme .tekst .crta {
+        stroke: #C21F39; }
+      .fazon-akcenat .Pitanje .Potpitanje .Dugme {
+        padding-right: 30px; }
+      .fazon-alter .Pitanje .Potpitanje .Dugme {
+        display: block;
+        background: none;
+        color: #272727;
+        padding: 0;
+        margin: 0; }
+        .fazon-alter .Pitanje .Potpitanje .Dugme:last-child {
+          margin-bottom: 6px; }
+      .Pitanje .Potpitanje .Dugme.nijeKlikno:hover:after {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(100, 40, 50, 0.4);
+        mix-blend-mode: color-dodge; }
+      .Pitanje .Potpitanje .Dugme.netacno.klikno .tekst .opacitet {
+        opacity: 0.9; }
+    .Pitanje .Potpitanje + .Odgovor {
+      margin-top: 0; }
+
+.TekstPitanja {
+  cursor: default;
+  line-height: 18px; }
+  .TekstPitanja + .Potpitanje {
+    margin-top: 12px; }
+  .p-oblast-fono .TekstPitanja {
+    padding-bottom: 10px; }
+
+.Izvor {
+  display: none; }
+
+.Rec {
+  position: relative;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  animation-delay: 0.8s;
+  animation-name: leziLevo;
+  animation-timing-function: ease-in; }
+  .p-oblast-fono .Rec {
+    display: inline-table;
+    width: 22px;
+    height: 30px;
+    min-height: 30px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: -1px;
+    margin-bottom: -1px; }
+    @media (max-width: 400px) {
+      .p-oblast-fono .Rec {
+        width: 19px; } }
+    .p-oblast-fono .Rec .aktivno:hover {
+      border: 1px solid #444;
+      transition: border-color 0.1s ease-in; }
+  .TekstPitanja .Rec {
+    background: none; }
+  .bio .Rec,
+  .p-1 .Rec,
+  .zamenio .Rec {
+    animation-delay: 0s; }
+  .Rec.nijeKlikno.aktivno:hover .tekst {
+    color: black; }
+  .Rec.netacno.klikno {
+    opacity: 0.8;
+    display: inline-block; }
+    .p-oblast-fono .Rec.netacno.klikno {
+      border-color: transparent; }
+      .p-oblast-fono .Rec.netacno.klikno .tekst .crta {
+        stroke-width: 12px;
+        display: inline-block;
+        width: 14px;
+        transform: translate(-50%, 2px);
+        left: 50%; }
+    .Rec.netacno.klikno:after {
+      display: none; }
+    .Rec.netacno.klikno .opacitet {
+      opacity: 0.4; }
+  .Rec.tacno.klikno {
+    z-index: 1; }
+  .Rec .svojstvo {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0; }
+  .Rec .znak {
+    display: inline-block;
+    margin: 0 1px; }
+
+.Znak,
+.razmak {
+  display: run-in; }
+
+.Odgovor {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+  width: 100%; }
+  .Odgovor .jos,
+  .Odgovor .tekst {
+    margin-bottom: 0; }
+  .Odgovor .status {
+    display: inline-block;
+    transform-origin: center; }
+    .Odgovor .status.ne {
+      animation: zadrhti 0.5s ease-in; }
+    .Odgovor .status.da {
+      animation: zavrti 0.5s ease-in; }
+  .Odgovor .jos {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: white; }
+    .Odgovor .jos .status {
+      animation: zavrti 1s ease-in 0.1s; }
+  .Odgovor .tekst {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #272727; }
+
+.Razlog {
+  font-size: 14px;
+  font-weight: normal; }
+  .Razlog p {
+    margin: 12px 0 0;
+    line-height: 18px; }
+    .Razlog p:first-child {
+      margin-top: 0; }
+  .smaranje-nema .Razlog {
+    display: none; }
+
+.Razlog,
+.letvica {
+  display: block;
+  padding: 12px;
+  border-top: 12px solid;
+  margin: 12px -12px -12px; }
+
+.letvica {
+  padding-top: 0; }
+
+.osim {
+  display: block;
+  font-size: 16px;
+  font-weight: normal; }
+
+.zamena {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  font-size: 20px;
+  cursor: pointer; }
+
+.bravo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  animation: svrati 0.8s ease-in;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  z-index: 1; }
+  .bravo .inner {
+    align-self: center; }
+
+.Modal {
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: white;
+  color: #272727;
+  padding: 20px 12px 0;
+  text-align: center;
+  z-index: 2;
+  transition: all 0.2s ease-in; }
+  .Modal.normalan {
+    max-width: 420px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    box-shadow: 0 0 30px #272727; }
+  .Modal.nevidljiv {
+    left: 160vw;
+    transform: rotateZ(15deg); }
+  .Modal .svajpuj {
+    max-width: 396px;
+    margin: 0 auto; }
+  .Modal .modalniNaslov {
+    line-height: 32px;
+    margin-bottom: 21px;
+    animation: leziLevo 0.2s ease-in;
+    transform-origin: left; }
+    .nivo-0 .Modal .modalniNaslov {
+      margin-bottom: 0; }
+  .Modal .modalniTekst {
+    margin-top: 20px;
+    transform-origin: left;
+    animation: leziLevo 0.3s ease-in; }
+  .Modal .rezultat {
+    display: inline-block;
+    position: relative;
+    color: white; }
+    .Modal .rezultat:before {
+      position: absolute;
+      top: -5px;
+      left: -12px;
+      display: inline-block;
+      z-index: -1;
+      padding: 5px 12px;
+      content: '';
+      width: 100%;
+      height: 100%;
+      transform: rotateZ(3deg);
+      background: #007744;
+      transition: transform 0.3s ease-in; }
+    .Modal .rezultat.netacno:before {
+      transform: rotateZ(-3deg);
+      background: #C21F39; }
+  .Modal .modalBravo {
+    animation: leziLevo 0.2s ease-in; }
+  .Modal .zatvoriModal {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    background: url("img/iks.svg") no-repeat 0 0;
+    background-size: cover; }
+    .Modal .zatvoriModal:hover {
+      color: #414141; }
+  .Modal.veliki {
+    height: 100vh;
+    transition: height 0.2s ease-in;
+    position: absolute; }
+    .Modal.veliki .iner {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .Modal .Dalje,
+  .Modal .Sertifikat,
+  .Modal p {
+    line-height: 24px; }
+  .Modal p {
+    margin: 12px;
+    font-size: 14px;
+    line-height: 18px; }
+  .Modal .Sertifikat,
+  .Modal .sledeciCelindz {
+    color: white;
+    background: #08334c;
+    padding: 20px;
+    border: 1px solid #03141e;
+    display: inline-block;
+    box-sizing: border-box;
+    width: auto; }
+  .Modal .Sertifikat {
+    position: relative;
+    margin: 0;
+    animation: noviNivo 0.5s ease-out; }
+    .Modal .Sertifikat .iner {
+      position: relative; }
+    .Modal .Sertifikat .Cifra,
+    .Modal .Sertifikat .label {
+      font-family: 'Roboto Slab', sans-serif;
+      display: inline-block;
+      margin: 0 2px;
+      float: none; }
+    .Modal .Sertifikat .Cifra {
+      top: auto; }
+  .Modal .sledeciCelindz {
+    margin: 12px auto;
+    animation: noviNivo 3s ease-out; }
+  .Modal .Dalje {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px 24px;
+    margin: 18px auto;
+    background: #007744;
+    color: white;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    animation: zadrhti 1s ease-in; }
+    .Modal .Dalje .strelica {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 15px 0 15px 30px;
+      border-color: transparent transparent transparent #ffffff;
+      margin-left: 12px; }
+    .Modal .Dalje:hover {
+      background: #ccac00; }
+  .nivo-0 .Modal {
+    position: static;
+    height: 100%; }
+    .nivo-0 .Modal .iner {
+      position: static;
+      transform: none; }
+  .Modal .uskakanje {
+    animation-name: uskakanje;
+    animation-timing-function: ease-in; }
+  .Modal .Uvod .Slajd.slajd-0 {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1; }
+  .Modal .Uvod .Slajd .tekst {
+    animation: pretapanje 0.4s ease-in; }
+  .Modal .Uvod .Dalje {
+    font-size: 17px;
+    font-weight: 500;
+    animation: uvod 3s ease-in;
+    cursor: pointer; }
+  .Modal .skipuj {
+    position: absolute;
+    bottom: 17%;
+    transform: translateX(-50%);
+    background: none;
+    color: black;
+    cursor: pointer;
+    font-size: 17px;
+    min-width: 300px; }
+
+.Front .Rec.nijeKlikno {
+  color: #272727; }
+
+.Baza {
+  padding: 12px; }
+  .Baza #rezultat {
+    margin: 12px 0 0; }
+  .Baza .tekst {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 12px;
+    display: block;
+    margin: 0 0 10px; }
+  .Baza #Tekst {
+    height: 100px; }
+  .Baza #izvoz {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    font-size: 11px;
+    font-family: monospace;
+    color: #272727;
+    max-width: 300px;
+    display: none;
+    background: white;
+    border: 1px solid;
+    padding: 12px; }
+  .Baza .izvoz button,
+  .Baza .izvoz textarea {
+    display: none; }
+  .Baza .Vrsta-baza {
+    color: white; }
+  .Baza .izabranaVrsta {
+    text-decoration: underline; }
+  .Baza .izabranaVrsta:hover {
+    cursor: pointer;
+    text-decoration: none; }
+  .Baza .Kategorija,
+  .Baza .Vrste {
+    margin: 7px 0; }
+  .Baza .desna,
+  .Baza .leva {
+    display: inline-block;
+    box-sizing: border-box; }
+  .Baza .leva {
+    width: 30%;
+    text-align: right;
+    padding-right: 12px; }
+  .Baza .desna {
+    width: 70%; }
+  .Baza .znak {
+    display: none; }
+  .Baza .vece-dugme {
+    padding: 5px 20px;
+    margin: 0; }
+  .Baza .Rec-b {
+    margin-bottom: 12px;
+    padding: 12px;
+    font-size: 12px;
+    background: white;
+    color: #272727; }
+    .Baza .Rec-b.glagol .kat-rod {
+      display: none; }
+    .Baza .Rec-b.glagol .glagolski_oblik-glagolski_pridev_radni .kat-rod,
+    .Baza .Rec-b.glagol .glagolski_oblik-glagolski_pridev_trpni .kat-rod {
+      display: block; }
+    .Baza .Rec-b.glagol .glagolski_oblik-infinitiv .kat-lice,
+    .Baza .Rec-b.glagol .glagolski_oblik-glagolski_pridev_radni .kat-lice,
+    .Baza .Rec-b.glagol .glagolski_oblik-glagolski_pridev_trpni .kat-lice,
+    .Baza .Rec-b.glagol .glagolski_oblik-glagolski_prilog_sada_nji .kat-lice,
+    .Baza .Rec-b.glagol .glagolski_oblik-glagolski_prilog_pro_li .kat-lice {
+      display: none; }
+    .Baza .Rec-b.pridev .stepen_pore_enja-komparativ .kat-vid button:nth-child(2),
+    .Baza .Rec-b.pridev .stepen_pore_enja-superlativ .kat-vid button:nth-child(2) {
+      outline: 3px solid #a2af13; }
+    .Baza .Rec-b.pridev .kat-odnosni {
+      display: none; }
+    .Baza .Rec-b.pridev .vrsta_prideva-odnosni .kat-odnosni {
+      display: block; }
+    .Baza .Rec-b.pridev .vrsta_prideva-odnosni .kat-vid, .Baza .Rec-b.pridev .vrsta_prideva-odnosni .kat-stepen_pore_enja {
+      display: none; }
+    .Baza .Rec-b .Kategorije.glagolski_vid-svr_eni .kat-nesvr_eni {
+      display: none; }
+    .Baza .Rec-b .Kategorije.glagolski_vid-nesvr_eni .kat-svr_eni {
+      display: none; }
+    .Baza .Rec-b .Kategorije.funkcija-pomo_ni .kat-glagolski_vid,
+    .Baza .Rec-b .Kategorije.funkcija-pomo_ni .kat-nesvr_eni,
+    .Baza .Rec-b .Kategorije.funkcija-pomo_ni .kat-rod,
+    .Baza .Rec-b .Kategorije.funkcija-pomo_ni .kat-svr_eni,
+    .Baza .Rec-b .Kategorije.funkcija-pomo_ni .kat-uzajamno_povratni,
+    .Baza .Rec-b .Kategorije.funkcija-pomo_ni .kat-glagolski_rod {
+      display: none; }
+
+.Pregled {
+  background: white;
+  color: #272727;
+  padding: 12px;
+  overflow-x: hidden; }
+  .Pregled .br-pr {
+    float: right;
+    font-size: 14px;
+    margin: 0 0 12px 12px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: -0.4px;
+    text-align: center;
+    background: #243648;
+    color: white; }
+  .Pregled .TekstPitanja {
+    margin-bottom: 6px; }
+    .Pregled .TekstPitanja .Rec, .Pregled .TekstPitanja .Znak {
+      font-size: 14px;
+      line-height: 16px; }
+  .Pregled .Izvor {
+    display: block;
+    text-align: right;
+    font-size: 10px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #243648; }

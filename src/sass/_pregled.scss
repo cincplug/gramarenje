@@ -1,0 +1,34 @@
+.Pregled {
+    background: white;
+    color: $tamna;
+    padding: $guter;
+    overflow-x: hidden;
+    .br-pr {
+        float: right;
+        font-size: 14px;
+        margin: 0 0 $guter $guter;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        letter-spacing: -0.4px;
+        text-align: center;
+        background: $siva;
+        color: white;
+    }
+    .TekstPitanja {
+        margin-bottom: $guter / 2;
+        .Rec, .Znak {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    .Izvor {
+        display: block;
+        text-align: right;
+        font-size: 10px;
+        padding-bottom: $guter;
+        margin-bottom: $guter;
+        border-bottom: 1px solid $siva;
+    }
+}

@@ -1,0 +1,967 @@
+#root {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.App {
+    background: lighten($teget, 5%);
+    color: white;
+    margin: 0 auto;
+    max-width: $sirina;
+    @include clearfix();
+    
+}
+
+.Meni {
+    padding: $guter;
+    @include clearfix;
+    .vege-burger {
+        float: left;
+        width: $guter * 2;
+        height: $guter * 2;
+        background: url('img/vege-burger.svg') no-repeat 0 0;
+        background-size: cover;
+        @include clearfix();
+    }    
+    .pismo-wrap {
+        width: 60px;
+        float: right;
+        .Pismo {
+            float: right;
+        }
+    }
+    
+    &.meni-true {
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        background: lighten($teget, 40%);
+        border-bottom: 1px solid lighten($teget, 10%);
+        box-shadow: 0 0 30px $tamna;
+        .vege-burger {
+            background-image: url('img/iks-beli.svg');
+        }
+        .dugmad {
+            float: left;
+            animation: leziDesno $dur / 2 $tm;
+            display: block;
+            width: calc(100% - #{$guter * 5});
+            margin-left: $guter;
+        }
+        .nivoi {
+            @include clearfix();
+
+            .gornje-dugme {
+                margin-left: 2px;
+                margin-right: 2px;
+                padding: 2px 5px 3px;
+                min-width: 20px;
+                float: left;
+
+                &.ovaj,
+                &:hover {
+                    background: none;
+                }
+                &.ovaj {
+                    cursor: default;
+                }
+            }
+        }
+    }
+    &.meni-false {
+        padding-bottom: 0;
+    }
+    
+}
+
+.naslovNivoa {
+    padding: $guter $guter 7px;
+    animation: uskakanje $dur * 1.5 $tm;
+    width: calc(100% - 100px);
+    float: left;
+
+    h1 {
+        font-size: 22px;
+        line-height: 24px;
+        margin: 10px 0 0;
+    }
+
+    .nadnaslov {
+        margin: 0;
+        animation: leziLevo $dur * 2 $tm;
+    }
+
+    .podnaslov {
+        margin: $guter / 2 0 $guter;
+        font-size: 17px;
+        line-height: 18px;
+        font-family: 'Roboto Slab', sans-serif;
+        width: calc(100% + 60px);
+    }
+}
+
+.naslovVrste {
+    padding: 4px $guter 5px;
+    font-size: 17px;
+    text-transform: capitalize;
+    .nivo-14 & {
+        text-transform: none;
+    }
+}
+
+.nadnaslov {
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.Cifra {
+    position: fixed;
+    z-index: 1;
+    // margin-top: $guter;
+    // margin-right: $guter;
+    top: $guter;
+    right: $guter;
+    float: right;
+    background: url('img/cifra.svg') no-repeat 0 0;
+    background-size: contain;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 17px;
+    letter-spacing: 0.2px;
+    font-family: 'Roboto Slab', sans-serif;
+    color: darken(gold, 30%);
+    transition: all 1s $tm;
+    animation: 0.3s ease-out;
+    transform-origin: 48%;
+    &.vel-2 {
+        width: 40px;
+        height: 40px;
+    }
+    &.vel-3 {
+        width: 45px;
+        height: 45px;
+    }
+    &.vel-4 {
+        width: 50px;
+        height: 50px;
+    }
+    span {
+        position: absolute;
+        line-height: normal;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &.pad {
+        animation-name: obrniLevo;
+    }
+
+    &.porast {
+        animation-name: obrniDesno;
+    }
+
+    .Modal & {
+        animation: zavrti 1s $tm;
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
+.crta {
+    display: none;
+}
+
+.SpisakVrsta {
+    clear: both;
+    .fazon-izbor & {
+        margin: $guter / 2;
+    }
+}
+
+.Vrsta {
+    animation: aktivnaVrsta $dur $tm;
+    border-bottom: 1px solid $border;
+    position: relative;
+    h2 {
+        font-weight: normal;
+    }
+    .fazon-izbor & {
+        margin: $guter / 2;
+        display: inline-block;
+        border: 1px solid $border;
+        h2 {
+            background-color: darken($border, 50%);
+        }
+    }
+    &:first-child {
+        .fazon-izbor & {
+            border-top: 1px solid $border;
+        }
+    }
+
+    &.dokTrajePrvi {
+        cursor: pointer;
+        transition: background-color 0.2s $tm !important;
+
+        &.nijeKlikno {
+            background: none;
+            @include min($md) {
+                &:hover {
+                    background: $siva;
+                }
+            }
+        }
+
+        &.netacno,
+        &.nijeKlikno {
+            h2 {
+                color: rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+
+    &.tacno {
+        &.klikno {
+            text-shadow: 0 0 1px white;
+            cursor: pointer;
+            transition-duration: $dur;
+        }
+    }
+
+    &.netacno {
+        &.klikno {
+            cursor: default;
+
+            &.dokTrajePrvi {
+                .tekst {
+                    display: inline-block;
+                    color: $tamnaPlus;
+                    @include precrtaj(#f33);
+                }
+
+                & + .iks {
+                    display: block;
+                }
+            }
+        }
+
+        &.gotovNivo {
+            opacity: 0;
+            border: none;
+            background: rgba(0, 0, 0, 0.1);
+            position: absolute;
+            transition: all 0.3s $tm;
+
+            &:after,
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    &.dokTrajeDrugi {
+        animation: pretapanje $dur $tm;
+
+        &.neaktivna {
+            border-bottom: none;
+
+            &.josNijeResena {
+                background: transparent;
+
+                .naslovVrste {
+                    color: rgba(255, 255, 255, 0.5);
+                    transition: color $dur $tm;
+
+                    &:hover {
+                        color: white;
+                    }
+                    background-color: $tamna;
+                    background: linear-gradient(
+                        to bottom,
+                        lighten($teget, 10%) 0%,
+                        lighten($teget, 15%) 5%,
+                        lighten($teget, 16%) 100%
+                    );
+
+                    &:hover {
+                        cursor: pointer;
+
+                        &:after {
+                            opacity: 0;
+                            transition: opacity $dur $tm;
+                        }
+                    }
+                }
+            }
+
+            .Pitanje {
+                display: none;
+            }
+            transition: none;
+        }
+
+        &.aktivna {
+            animation: uskakanje $dur $tm;
+
+            .Izvor {
+                display: block;
+                text-align: right;
+                opacity: 0.7;
+                font-size: 12px;
+                line-height: 18px;
+                margin: -$guter / 4 $guter $guter/ 2;
+            }
+        }
+
+        &.resena {
+            transition: all $dur $tm;
+            position: relative;
+
+            .kvaka {
+                position: absolute;
+                top: 0;
+                right: 0;
+                animation: zavrti 0.7s $tm;
+                position: absolute;
+                margin: 15px $guter 0 0;
+                top: -4px;
+                right: 6px;
+                width: 20px;
+                height: 20px;
+                background: url('img/kvaka.svg');
+                background-size: cover;
+                z-index: 1;
+            }
+        }
+
+        &.bio {
+            .jos,
+            .status {
+                animation: none;
+            }
+        }
+    }
+
+    &.nemaNaslov {
+        padding-top: $guter;
+    }
+}
+
+.tacno {
+    &.klikno {
+        background: $siva;
+    }
+}
+
+.Pitanje {
+    padding: $guter;
+    margin: 0 $guter 10px;
+    background: white;
+    color: $tamna;
+    position: relative;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    animation: leziDesno 0.3s $tm;
+
+    .NaslovPitanja {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-family: 'Roboto Slab', sans-serif;
+
+        .nadnaslov {
+            margin: 1px 0 0;
+        }
+
+        .podnaslov {
+            line-height: 24px;
+            margin-top: 1px;
+        }
+    }
+
+    .Potpitanje {
+        border-top: 1px solid #949494;
+        padding-top: $guter;
+        margin-top: $guter;
+        animation: leziDesno $dur $tm;
+
+        .Dugme {
+            font-family: 'Roboto Slab', sans-serif;
+            font-size: 17px;
+            font-weight: normal;
+            position: relative;
+            padding: 4px 8px;
+            margin: 0 $guter $guter 0;
+            color: white;
+            width: auto !important;
+            position: relative;
+            cursor: pointer;
+            animation-name: leziLevo;
+            box-sizing: border-box;
+
+            .vrsta-akcenta {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 26px;
+                background: $fino;
+                font-size: 20px;
+                line-height: 40px;
+                text-align: center;
+                overflow: hidden;
+            }
+
+            .fazon-akcenat &,
+            .fazon-alter & {
+                .tekst {
+                    .crta {
+                        stroke: $crvena;
+                    }
+                }
+            }
+
+            .fazon-akcenat & {
+                padding-right: 30px;
+            }
+
+            .fazon-alter & {
+                display: block;
+                background: none;
+                color: $tamna;
+                padding: 0;
+                margin: 0;
+
+                &:last-child {
+                    margin-bottom: 6px;
+                }
+            }
+
+            &.nijeKlikno {
+                &:hover {
+                    &:after {
+                        display: block;
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(100, 40, 50, 0.4);
+                        mix-blend-mode: color-dodge;
+                    }
+                }
+            }
+
+            &.netacno {
+                &.klikno {
+                    .tekst {
+                        .opacitet {
+                            opacity: 0.9;
+                        }
+                    }
+                }
+            }
+        }
+
+        & + .Odgovor {
+            margin-top: 0;
+        }
+    }
+}
+
+.TekstPitanja {
+    cursor: default;
+    line-height: 18px;
+
+    & + .Potpitanje {
+        margin-top: $guter;
+    }
+    
+    .p-oblast-fono & {
+        padding-bottom: 10px;
+    }
+
+    // .r-sp {
+    //     white-space: nowrap;
+    // }
+}
+
+.Izvor {
+    display: none;
+}
+
+.Rec {
+    position: relative;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    animation-delay: $dur * 4;
+    animation-name: leziLevo;
+    animation-timing-function: $tm;
+
+    .p-oblast-fono & {
+        display: inline-table;
+        width: 22px;
+        height: 30px;
+        min-height: 30px;
+        line-height: 32px;
+        text-align: center;
+        border: 1px solid $fino;
+        margin-right: -1px;
+        margin-bottom: -1px;
+        @media (max-width: 400px) {
+            width: 19px;
+        }
+
+        .aktivno {
+            &:hover {
+                border: 1px solid #444;
+                transition: border-color 0.1s $tm;
+            }
+        }
+    }
+
+    .TekstPitanja & {
+        background: none;
+    }
+
+    .bio &,
+    .p-1 &,
+    .zamenio & {
+        animation-delay: 0s;
+    }
+
+    &.nijeKlikno {
+        &.aktivno {
+            &:hover {
+                .tekst {
+                    color: black;
+                }
+            }
+        }
+    }
+
+    &.netacno {
+        &.klikno {
+            .p-oblast-fono & {
+                border-color: transparent;
+
+                .tekst {
+                    .crta {
+                        stroke-width: $guter;
+                        display: inline-block;
+                        width: 14px;
+                        transform: translate(-50%, 2px);
+                        left: 50%;
+                    }
+                }
+            }
+            opacity: 0.8;
+            display: inline-block;
+
+            &:after {
+                display: none;
+            }
+
+            .opacitet {
+                opacity: 0.4;
+            }
+        }
+    }
+
+    &.tacno {
+        &.klikno {
+            z-index: 1;
+        }
+    }
+
+    .svojstvo {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 0;
+    }
+
+    &.jePoslednjiSlog {
+    }
+
+    &.jePrviSlog {
+    }
+
+    &.imaSvojstvo {
+    }
+
+    .znak {
+        display: inline-block;
+        margin: 0 1px;
+        // &.blizu {
+        //     margin-right: -$razmak;
+        // }
+        // &.leva-zagrada {
+        //     margin-right: -$razmak;
+        //     margin-left: $razmak;
+        // }
+    }
+}
+
+.Znak,
+.razmak {
+    display: run-in;
+}
+
+.Odgovor {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', sans-serif;
+    width: 100%;
+
+    .jos,
+    .tekst {
+        margin-bottom: 0;
+    }
+
+    .status {
+        display: inline-block;
+        transform-origin: center;
+
+        &.ne {
+            animation: zadrhti 0.5s $tm;
+        }
+
+        &.da {
+            animation: zavrti 0.5s $tm;
+        }
+    }
+
+    .jos {
+        position: absolute;
+        top: -30px;
+        right: 0;
+        font-size: 14px;
+        font-weight: normal;
+        color: white;
+
+        .status {
+            animation: zavrti 1s $tm 0.1s;
+        }
+    }
+
+    .tekst {
+        margin-top: $guter;
+        padding-top: $guter;
+        border-top: 1px solid $tamna;
+    }
+}
+
+.Razlog {
+    font-size: 14px;
+    font-weight: normal;
+
+    p {
+        margin: 12px 0 0;
+        line-height: 18px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    .smaranje-nema & {
+        display: none;
+    }
+}
+
+.Razlog,
+.letvica {
+    display: block;
+    padding: $guter;
+    border-top: $guter solid;
+    margin: #{$guter} #{-$guter} #{-$guter};
+}
+
+.letvica {
+    padding-top: 0;
+}
+
+.osim {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.zamena {
+    position: absolute;
+    top: 6px;
+    right: $guter;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.bravo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+
+    .inner {
+        align-self: center;
+    }
+    animation: svrati $dur * 4 $tm;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.Modal {
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: white;
+    color: $tamna;
+    padding: 20px $guter 0;
+    text-align: center;
+    z-index: 2;
+    transition: all $dur $tm;
+    &.normalan {
+        max-width: $sirina;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        box-shadow: 0 0 30px $tamna;
+    }
+    &.nevidljiv {
+        left: 160vw;
+        transform: rotateZ(15deg);
+    }
+
+    .svajpuj {
+        max-width: $sirina - $guter * 2;
+        margin: 0 auto;
+    }
+
+    .modalniNaslov {
+        line-height: 32px;
+        margin-bottom: 21px;
+        animation: leziLevo 0.2s $tm;
+        transform-origin: left;
+
+        .nivo-0 & {
+            margin-bottom: 0;
+        }
+    }
+
+    .modalniTekst {
+        margin-top: 20px;
+        transform-origin: left;
+        animation: leziLevo 0.3s $tm;
+    }
+
+    .rezultat {
+        display: inline-block;
+        position: relative;
+        color: white;
+
+        &:before {
+            position: absolute;
+            top: -5px;
+            left: -$guter;
+            display: inline-block;
+            z-index: -1;
+            padding: 5px $guter;
+            content: '';
+            width: 100%;
+            height: 100%;
+            transform: rotateZ(3deg);
+            background: $bojaJeste;
+            transition: transform 0.3s $tm;
+        }
+
+        &.netacno {
+            &:before {
+                transform: rotateZ(-3deg);
+                background: $bojaNije;
+            }
+        }
+    }
+
+    .modalBravo {
+        animation: leziLevo $dur $tm;
+    }
+
+    .zatvoriModal {
+        position: absolute;
+        top: $guter;
+        right: $guter;
+        width: 20px;
+        height: 20px;
+        z-index: 1;
+        background: url('img/iks.svg') no-repeat 0 0;
+        background-size: cover;
+        &:hover {
+            color: $tamnaPlus;
+        }
+    }
+    &.raste {
+        
+    }
+    &.veliki {
+        height: 100vh;
+        transition: height $dur $tm;
+        position: absolute;
+        .iner {
+            width: 100%;
+            max-width: $sirina;
+            height: auto;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    }
+
+    .Dalje,
+    .Sertifikat,
+    p {
+        line-height: 24px;
+    }
+
+    p {
+        margin: $guter;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .Sertifikat,
+    .sledeciCelindz {
+        color: white;
+        background: $bojaSertifikat;
+        padding: 20px;
+        border: 1px solid darken($bojaSertifikat, 10%);
+        display: inline-block;
+        box-sizing: border-box;
+        width: auto;
+    }
+
+    .Sertifikat {
+        position: relative;
+        margin: 0;
+        animation: noviNivo 0.5s ease-out;
+        .iner {
+            position: relative;
+        }
+        .Cifra,
+        .label {
+            font-family: 'Roboto Slab', sans-serif;
+            display: inline-block;
+            margin: 0 2px;
+            float: none;
+        }
+        .Cifra {
+            top: auto;
+        }
+    }
+
+    .sledeciCelindz {
+        margin: $guter auto;
+        animation: noviNivo 3s ease-out;
+    }
+
+    .Dalje {
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: $guter $guter * 2;
+        margin: 18px auto;
+        background: $zelena;
+        color: white;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        animation: zadrhti 1s $tm;
+
+        .strelica {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 0 15px 30px;
+            border-color: transparent transparent transparent #ffffff;
+            margin-left: $guter;
+        }
+
+        &:hover {
+            background: darken(gold, 10%);
+        }
+    }
+
+    .nivo-0 & {
+        position: static;
+        height: 100%;
+        .iner {
+            position: static;
+            transform: none;
+        }
+    }
+
+    .uskakanje {
+        animation-name: uskakanje;
+        animation-timing-function: $tm;
+    }
+
+    .Uvod {
+        .Slajd {
+            &.slajd-0 {
+                font-size: 34px;
+                font-weight: bold;
+                line-height: 1;
+            }
+            .tekst {
+                animation: pretapanje $dur * 2 $tm;
+            }
+        }
+
+        .Dalje {
+            font-size: 17px;
+            font-weight: 500;
+            animation: uvod 3s $tm;
+            cursor: pointer;
+        }
+
+
+    }
+    .skipuj {
+        position: absolute;
+        bottom: 17%;
+        transform: translateX(-50%);
+        background: none;
+        color: black;
+        cursor: pointer;
+        font-size: 17px;
+        min-width: 300px;
+    }
+}
+
+.Front {
+    .Rec {
+        &.nijeKlikno {
+            color: $tamna;
+        }
+    }
+}

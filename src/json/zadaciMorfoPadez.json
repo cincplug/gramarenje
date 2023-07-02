@@ -1,0 +1,38 @@
+{
+    "imenica": [
+        "padež: nominativ",
+        "padež: genitiv",
+        "padež: dativ",
+        "padež: akuzativ",
+        "padež: vokativ",
+        "padež: instrumental",
+        "padež: lokativ",
+        "promena: nepromenljiva",
+        "promena: adjektivna"
+    ],
+    "pridev": [
+        "padež: akuzativ",
+        "padež: genitiv",
+        "padež: nominativ",
+        "padež: vokativ",
+        "padež: instrumental",
+        "padež: lokativ",
+        "padež: dativ"
+    ],
+    "zamenica": [
+        "padež: vokativ",
+        "padež: instrumental",
+        "padež: akuzativ",
+        "padež: nominativ",
+        "padež: genitiv",
+        "padež: dativ",
+        "padež: lokativ"
+    ],
+    "broj": [
+        "padež: dativ",
+        "padež: nominativ",
+        "padež: genitiv",
+        "padež: akuzativ",
+        "padež: lokativ"
+    ]
+}

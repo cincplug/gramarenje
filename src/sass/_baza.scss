@@ -1,0 +1,164 @@
+.Baza {
+    padding: $guter;
+
+    #rezultat {
+        margin: $guter 0 0;
+    }
+
+    .tekst {
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+        margin-bottom: $guter;
+        display: block;
+        margin: 0 0 10px;
+    }
+    #Tekst {
+        height: 100px;
+    }
+    #izvoz {
+        position: fixed;
+        top: $guter;
+        right: $guter;
+        font-size: 11px;
+        font-family: monospace;
+        color: $tamna;
+        max-width: 300px;
+        display: none;
+        background: white;
+        border: 1px solid;
+        padding: $guter;
+    }
+
+    .izvoz button,
+    .izvoz textarea {
+        display: none;
+    }
+
+    .Vrsta-baza {
+        color: white;
+    }
+
+    .izabranaVrsta {
+        text-decoration: underline;
+    }
+
+    .izabranaVrsta:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .Kategorija,
+    .Vrste {
+        margin: 7px 0;
+    }
+
+    .desna,
+    .leva {
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    .leva {
+        width: 30%;
+        text-align: right;
+        padding-right: $guter;
+    }
+
+    .desna {
+        width: 70%;
+    }
+
+    .znak {
+        display: none;
+    }
+
+    .vece-dugme {
+        padding: 5px 20px;
+        margin: 0;
+    }
+
+    .Rec-b {
+        margin-bottom: $guter;
+        padding: $guter;
+        font-size: 12px;
+        background: white;
+        color: $tamna;
+
+        &.glagol {
+
+            .kat-rod {
+                display: none;
+            }
+
+            .glagolski_oblik-glagolski_pridev_radni,
+            .glagolski_oblik-glagolski_pridev_trpni {
+
+                .kat-rod {
+                    display: block;
+                }
+
+            }
+
+            .glagolski_oblik-infinitiv,
+            .glagolski_oblik-glagolski_pridev_radni,
+            .glagolski_oblik-glagolski_pridev_trpni,
+            .glagolski_oblik-glagolski_prilog_sada_nji,
+            .glagolski_oblik-glagolski_prilog_pro_li {
+
+                .kat-lice {
+                    display: none;
+                }
+
+            }
+
+        }
+
+        &.pridev {
+            .stepen_pore_enja-komparativ,
+            .stepen_pore_enja-superlativ {
+                .kat-vid {
+                    button:nth-child(2) {
+                        outline: 3px solid $bojaPridevi;
+                    }
+                }
+            }
+            .kat-odnosni {
+                display: none;
+            }
+            .vrsta_prideva-odnosni {
+                .kat-odnosni {
+                    display: block;
+                }
+                .kat-vid, .kat-stepen_pore_enja {
+                    display: none;
+                }
+            }
+        }
+
+        .Kategorije {
+            &.glagolski_vid-svr_eni {
+                .kat-nesvr_eni {
+                    display: none;
+                }
+            }
+
+            &.glagolski_vid-nesvr_eni {
+                .kat-svr_eni {
+                    display: none;
+                }
+            }
+
+            &.funkcija-pomo_ni {
+                .kat-glagolski_vid,
+                .kat-nesvr_eni,
+                .kat-rod,
+                .kat-svr_eni,
+                .kat-uzajamno_povratni,
+                .kat-glagolski_rod {
+                    display: none;
+                }
+            }
+        }
+    }
+}

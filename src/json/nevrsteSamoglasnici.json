@@ -1,0 +1,28 @@
+[
+
+    {
+        "mnozina": "debeli",
+        "tacno": false,
+        "tekst": "Kad bi postojalo nešto što bi se zvalo „debeli samoglasnici”, to bi verovatno bio samoglasnik „o”, ali takva kategorija u gramatici stvarno ne postoji?"
+    },
+    {
+        "mnozina": "mršavi",
+        "tacno": false,
+        "tekst": "Ako bi „debeli samoglasnik” bio „o”, onda bi „mršavi samoglasnik” verovatno mogao da bude „i”, ali o čemu mi ovde pričamo kad imamo pametnija posla."
+    },
+    {
+        "mnozina": "široki",
+        "tacno": false,
+        "tekst": "Postoje široki ljudi, postoje široki bulevari, ali šta bi mogli da budu široki samoglasnici?"
+    },
+    {
+        "mnozina": "duboki",
+        "tacno": false,
+        "tekst": "Svaki samoglasnik može da se otpeva, i ton kojim ćemo ga otpevati može biti visok ili dubok, ali samoglasnik sam po sebi ne može biti dubok. Visoki samoglasnik - to već postoji, ali ta oznaka se ne odnosi na visinu tona, nego na uspravni položaj jezika pri artikulaciji samoglasnika."
+    },
+    {
+        "mnozina": "dugački",
+        "tacno": false,
+        "tekst": "Postoje dugi i kratki naglasci, a naglasci jesu najčešće na samoglasnicima, ali samoglasnik sam po sebi nije ni dug ni kratak, samim tim što svaki od pet samoglasnika može da bude ili dug ili kratak zavisno od reči u kojoj se nalazi."
+    }
+]

@@ -1,0 +1,70 @@
+.klikabl:hover {
+    cursor: pointer;
+}
+.text-left {
+    text-align: left;
+}
+.float-left {
+    float: left;
+}
+.text-right {
+    text-align: right;
+}
+.float-right {
+    float: right;
+}
+.text-center {
+    text-align: center;
+}
+.text-normal {
+    font-weight: normal;
+}
+.text-bold {
+    font-weight: bold;
+}
+.clearfix {
+    @include clearfix;
+}
+.json {
+    word-wrap: break-word;
+}
+
+.imenice, .kratkouzlazni { @include vrstaMnozina($bojaImenice); }
+.imenica { @include vrstaJednina($bojaImenice); }
+.pridevi, .promene { @include vrstaMnozina($bojaPridevi); }
+.pridev, .alter { @include vrstaJednina($bojaPridevi); }
+.zamenice, .kratkosilazni { @include vrstaMnozina($bojaZamenice); }
+.zamenica { @include vrstaJednina($bojaZamenice); }
+.brojevi, .suglasnici { @include vrstaMnozina($bojaBrojevi); }
+.broj, .suglasnik { @include vrstaJednina($bojaBrojevi); }
+.glagoli { @include vrstaMnozina($bojaGlagoli); }
+.glagol { @include vrstaJednina($bojaGlagoli); }
+.prilozi { @include vrstaMnozina($bojaPrilozi); }
+.prilog { @include vrstaJednina($bojaPrilozi); }
+.predlozi, .akcenti { @include vrstaMnozina($bojaPredlozi); }
+.predlog, .akcenat { @include vrstaJednina($bojaPredlozi); }
+.veznici { @include vrstaMnozina($bojaVeznici); }
+.veznik { @include vrstaJednina($bojaVeznici); }
+.re_ce, .dugouzlazni { @include vrstaMnozina($bojaReczce); }
+.re_ca { @include vrstaJednina($bojaReczce); }
+.uzvici, .samoglasnici, .dugosilazni { @include vrstaMnozina($bojaUzvici); }
+.uzvik, .samoglasnik { @include vrstaJednina($bojaUzvici); }
+
+
+.leziLevo {
+    animation-name: leziLevo;
+}
+
+.leziDesno {
+    animation-name: leziDesno;
+}
+
+
+@for $i from 1 through 50 {
+    .a-dur-#{$i} {
+        animation-duration: #{$i * 10}ms;
+    }
+    .t-dur-#{$i} {
+        transition-duration: #{$i * 10}ms;
+    }
+}

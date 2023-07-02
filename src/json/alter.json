@@ -1,0 +1,35 @@
+[
+    {
+        "ime": "jotovanje",
+        "znak": ")"
+    },
+    {
+        "ime": "jednačenje po zvučnosti",
+        "znak": "∑"
+    },
+    {
+        "ime": "jednačenje po mestu tvorbe",
+        "znak": "#"
+    },
+    {
+        "ime": "prelazak „l” u „o”",
+        "znak": "0"
+    },
+    {
+        "ime": "prva palatalizacija",
+        "znak": "1"
+    },
+    {
+        "ime": "druga palatalizacija",
+        "znak": "2"
+    },
+    {
+        "ime": "nepostojano „a”",
+        "znak": "@"
+    },
+    {
+        "ime": "gubljenje suglasnika",
+        "znak": "X"
+    }
+
+]

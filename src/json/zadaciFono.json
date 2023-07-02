@@ -1,0 +1,29 @@
+{
+    "samoglasnik": [
+        "vodoravni položaj: prednjeg vodoravnog položaja",
+        "vodoravni položaj: srednjeg vodoravnog položaja",
+        "vodoravni položaj: zadnjeg vodoravnog položaja",
+        "uspravni položaj: visokog uspravnog položaja",
+        "uspravni položaj: srednjeg uspravnog položaja",
+        "uspravni položaj: niskog uspravnog položaja"
+    ],
+    "suglasnik": [
+        "grupa: sonant",
+        "grupa: konsonant",
+        "zvučnost: zvučni",
+        "zvučnost: bezvučni",
+        "mesto tvorbe: dvousneni",
+        "mesto tvorbe: usneno-zubni",
+        "mesto tvorbe: zubni",
+        "mesto tvorbe: nadzubni",
+        "mesto tvorbe: prednjonepčani",
+        "mesto tvorbe: zadnjonepčani",
+        "način tvorbe: pregradni",
+        "način tvorbe: strujni",
+        "način tvorbe: sliveni",
+        "način tvorbe: nosni",
+        "način tvorbe: lateral",
+        "način tvorbe: vibrant",
+        "način tvorbe: aproksimant"
+    ]
+}

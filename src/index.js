@@ -1,17 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Baza from './Baza/Baza';
+import Pregled from './Pregled';
+import './utils.js';
+import './index.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+if(window.location.search.indexOf('baza') > -1) {
+    ReactDOM.render(
+      <Baza/>,
+      document.getElementById('root')
+    );
+} else if(window.location.search.indexOf('pregled') > -1) {
+    ReactDOM.render(
+      <Pregled/>,
+      document.getElementById('root')
+    );
+} else {
+    // document.getElementById('disklejmer').removeAttribute("style");
+    // document.getElementById('okej').addEventListener('click', function(){
+        ReactDOM.render(
+          <App/>,
+          document.getElementById('root')
+        );
+    // });
+}

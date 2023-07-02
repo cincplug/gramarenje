@@ -1,0 +1,48 @@
+// * {
+//     animation: none! important;
+// }
+
+body {
+    color: white;
+    background: lighten($teget, 14%);
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    font-family: 'Roboto Slab', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 27px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0;
+    line-height: 32px;
+}
+
+:focus {
+    outline: none;
+}
+
+button, .button {
+    margin: 0 4px 4px 0;
+    padding: 3px 8px;
+    font-size: 11px;
+    border: none;
+    border-radius: 0;
+    color: white;
+    background: $siva;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: 'Roboto Slab', sans-serif;
+    &:hover {
+        background: $sivaPlus;
+        transition: border-color 0.2s ease;
+        cursor: pointer;
+    }
+}

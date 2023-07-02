@@ -1,0 +1,202 @@
+{
+    "a": {
+        "vrsta": "samoglasnik",
+        "vodoravni položaj": "srednjeg vodoravnog položaja",
+        "uspravni položaj": "niskog uspravnog položaja"
+    },
+    "b": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "zvučni",
+        "mesto tvorbe": "dvousneni",
+        "način tvorbe": "pregradni"
+    },
+    "v": {
+        "vrsta": "suglasnik",
+        "grupa": "sonant",
+		"zvučnost": "zvučni",
+        "mesto tvorbe": "usneno-zubni",
+        "način tvorbe": "aproksimant"
+    },
+    "g": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "zvučni",
+        "mesto tvorbe": "zadnjonepčani",
+        "način tvorbe": "pregradni"
+    },
+    "d": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "zvučni",
+        "mesto tvorbe": "zubni",
+        "način tvorbe": "pregradni"
+    },
+    "đ": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "zvučni",
+        "mesto tvorbe": "prednjonepčani",
+        "način tvorbe": "sliveni"
+    },
+    "e": {
+        "vrsta": "samoglasnik",
+        "vodoravni položaj": "prednjeg vodoravnog položaja",
+        "uspravni položaj": "srednjeg uspravnog položaja"
+    },
+    "ž": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "zvučni",
+        "mesto tvorbe": "prednjonepčani",
+        "način tvorbe": "strujni"
+    },
+    "z": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "zvučni",
+        "mesto tvorbe": "zubni",
+        "način tvorbe": "strujni"
+    },
+    "i": {
+        "vrsta": "samoglasnik",
+        "vodoravni položaj": "prednjeg vodoravnog položaja",
+        "uspravni položaj": "visokog uspravnog položaja"
+    },
+    "j": {
+        "vrsta": "suglasnik",
+        "grupa": "sonant",
+		"zvučnost": "zvučni",
+        "mesto tvorbe": "prednjonepčani",
+        "način tvorbe": "aproksimant"
+    },
+    "k": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "bezvučni",
+        "mesto tvorbe": "zadnjonepčani",
+        "način tvorbe": "pregradni"
+    },
+    "l": {
+        "vrsta": "suglasnik",
+        "grupa": "sonant",
+		"zvučnost": "zvučni",
+        "mesto tvorbe": "nadzubni",
+        "način tvorbe": "lateral"
+    },
+    "lj": {
+        "vrsta": "suglasnik",
+        "grupa": "sonant",
+		"zvučnost": "zvučni",
+        "mesto tvorbe": "prednjonepčani",
+        "način tvorbe": "lateral"
+    },
+    "m": {
+        "vrsta": "suglasnik",
+        "grupa": "sonant",
+		"zvučnost": "zvučni",
+        "mesto tvorbe": "dvousneni",
+        "način tvorbe": "nosni"
+    },
+    "n": {
+        "vrsta": "suglasnik",
+        "grupa": "sonant",
+		"zvučnost": "zvučni",
+        "mesto tvorbe": "nadzubni",
+        "način tvorbe": "nosni"
+    },
+    "nj": {
+        "vrsta": "suglasnik",
+        "grupa": "sonant",
+		"zvučnost": "zvučni",
+        "mesto tvorbe": "prednjonepčani",
+        "način tvorbe": "nosni"
+    },
+    "o": {
+        "vrsta": "samoglasnik",
+        "vodoravni položaj": "zadnjeg vodoravnog položaja",
+        "uspravni položaj": "srednjeg uspravnog položaja"
+    },
+    "p": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "bezvučni",
+        "mesto tvorbe": "dvousneni",
+        "način tvorbe": "pregradni"
+    },
+    "r": {
+        "vrsta": "suglasnik",
+        "grupa": "sonant",
+		"zvučnost": "zvučni",
+        "mesto tvorbe": "nadzubni",
+        "način tvorbe": "vibrant"
+    },
+    "s": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "bezvučni",
+        "mesto tvorbe": "zubni",
+        "način tvorbe": "strujni"
+    },
+    "t": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "bezvučni",
+        "mesto tvorbe": "zubni",
+        "način tvorbe": "pregradni"
+    },
+    "ć": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "bezvučni",
+        "mesto tvorbe": "prednjonepčani",
+        "način tvorbe": "sliveni"
+    },
+    "u": {
+        "vrsta": "samoglasnik",
+        "vodoravni položaj": "zadnjeg vodoravnog položaja",
+        "uspravni položaj": "visokog uspravnog položaja"
+    },
+    "f": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "bezvučni",
+        "mesto tvorbe": "usneno-zubni",
+        "način tvorbe": "strujni"
+    },
+    "h": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "bezvučni",
+        "mesto tvorbe": "zadnjonepčani",
+        "način tvorbe": "strujni"
+    },
+    "c": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "bezvučni",
+        "mesto tvorbe": "zubni",
+        "način tvorbe": "sliveni"
+    },
+    "č": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "bezvučni",
+        "mesto tvorbe": "prednjonepčani",
+        "način tvorbe": "sliveni"
+    },
+    "dž": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "zvučni",
+        "mesto tvorbe": "prednjonepčani",
+        "način tvorbe": "sliveni"
+    },
+    "š": {
+        "vrsta": "suglasnik",
+        "grupa": "konsonant",
+		"zvučnost": "bezvučni",
+        "mesto tvorbe": "prednjonepčani",
+        "način tvorbe": "strujni"
+    }
+}
