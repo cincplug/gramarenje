@@ -739,7 +739,7 @@
     &.normalan {
         max-width: $sirina;
         left: 50%;
-        top: 0;
+        top: 100%;
         transform: translateX(-50%);
         box-shadow: 0 0 30px $tamna;
     }
